@@ -90,6 +90,7 @@ header .nav-item:hover .border_nav{
   font-size: 16px;
   font-family: Lato-Regular;
   color: #fff;
+  margin-top: 30px;
 }
 .header_btn .btn{
   font-size: 18px !important;
@@ -153,7 +154,7 @@ header .nav-item:hover .border_nav{
 .btn-menu span {
   display: block;
   height: 2px;
-  background-color: #fff;
+  background-color: red;
   margin: 5px 0 0;
   transition: all .1s linear .23s;
   position: relative;
@@ -165,7 +166,7 @@ header .nav-item:hover .border_nav{
 /*при нажатии на бургер двигаем его и делаем другой фон бургеру*/
 .hidden-menu-ticker:checked ~ .btn-menu {
   left: 160px;
-  background-color: rgba(38,38,38,.9);;
+  background-color: rgba(38,38,38,.1);
 }
 /*и дальше стили меняющие бургер, двигающие менюшку по событию - нажатие на значек бургера*/
 .hidden-menu-ticker:checked ~ .hidden-menu {
@@ -255,15 +256,16 @@ header .nav-item:hover .border_nav{
   padding-right: 5px;
 }
 
-.about h2, #features_cr h2{
+.about h2, #features_cr h2 , #team_cr h2{
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
 }
-.about h3, #features_cr h3, #clients_cr h3 {
+.about h3, #features_cr h3, #clients_cr h3 , #team_cr h3{
   text-align: center;
   font-size: 16px;
   font-family: Lato-Bold;
+  margin-top: 40px;
 }
 .about p {
   color: #505050;
@@ -332,7 +334,7 @@ header .nav-item:hover .border_nav{
   border-top: 1px solid #262626;
   background: #262626;
 }
-#portfolio_cr h2, #clients_cr h2{
+#portfolio_cr h2, #clients_cr h2 {
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
@@ -362,7 +364,7 @@ header .nav-item:hover .border_nav{
 #features_cr {
   padding: 20px;
 }
-#features_cr h2 {
+#features_cr h2, #team_cr h2 {
   margin-top: 90px;
 }
 #features_cr h4 {
@@ -397,7 +399,7 @@ header .nav-item:hover .border_nav{
 #clients_cr h3{
   color: #a4a4a4;
 }
-.clients_info {
+.clients_info, .scrol_client, .team_scroll, .skills_info {
   margin-top: 100px;
 }
 #clients_cr h4{
@@ -415,8 +417,74 @@ header .nav-item:hover .border_nav{
 .clients_info ul{
   margin-top: 35px;
 }
-
+#clients_cr ul li {
+  margin: 0 10px;
+}
+#clients_cr ul li a[aria-selected="true"] {
+  background: red!important;
+}
+#clients_cr ul li a[aria-selected="false"] {
+  background: #fff;
+}
+#clients_cr h5 {
+  font-size: 16px;
+  font-family: Raleway-Bold;
+  color: red;
+  text-transform: uppercase;
+}
+.client_hexagon {
+ clip-path: polygon(25% 30%, 75% 30%, 100% 60%, 75% 90%, 25% 90%, 0% 60%);
+}
 /*--------------------- END CLIENTS ---------------------*/
+
+
+/*--------------------- TEAM ---------------------*/
+.black_hover {
+  width: 100%;
+  position: relative;
+}
+.black_hover span {
+  width: 100%;
+  max-width: 270px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  
+  opacity: 0;
+  transition: all 1s ease-out;
+  background: #414141;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.black_hover span:hover {
+  opacity: .9;
+}
+.team_wrapper:hover h4{
+  color: red;
+}
+.team_wrapper:hover {
+  border: 1px solid #505050;
+}
+.team_wrapper {
+  border: 1px solid #d2d2d2;
+}
+.team_wrapper h4, .skills_info h4{
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  text-transform: uppercase;
+  color: #505050;
+}
+.team_wrapper h5, .skills_info h5{
+  font-size: 16px;
+  font-family: Lato-Regular;
+  color: #505050;
+}
+.our_skills {
+  margin-bottom: 100px;
+}
+
+/*--------------------- END TEAM ---------------------*/
 
 
 
@@ -474,12 +542,26 @@ header .nav-item:hover .border_nav{
   .features_info h4{
     font-size: 14px;
   }
+  .clients_img, .scrol_client, .team_scroll, .team_wrapper, .skills_info {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width : 600px){
-  .features_info {
+  .features_info, .clients_img {
     flex-wrap: nowrap !important;
   }
+  .team_info, .skills_info{
+    width: 50%;
+  }
+  .features_img {
+    display: none;
+  }
+  .features_info h4 {
+    text-align: center;
+  }
+
+
 }
 
 @media (max-width : 480px) {
@@ -504,41 +586,47 @@ header .nav-item:hover .border_nav{
   .header_sm figcaption p{
     margin: 0;
   }
-  .about p, #features_cr h4, .clients_info p, .about .about_tehnology p{
+  .about p, #features_cr h4, .team_wrapper h5, .clients_info p, .about .about_tehnology p{
     font-size: 11px;
   }
   .about .card-body {
     font-size: 11px;
     padding: 5px;
   }
-  .about h2, #features_cr h2, #clients_cr h2, .header_sm h1{
+  .about h2, #features_cr h2, #clients_cr h2, .header_sm h1, #team_cr h2, #portfolio_cr h2{
     font-size: 17px;
+    margin-top: 40px;
   }
-  .about h3, #features_cr h3, #clients_cr h4, .about .card-header h5 .btn, .about .about_tehnology h5, #clients_cr h3 {
+  .about h3, #features_cr h3, #clients_cr h4, .team_wrapper h4, .about .card-header h5 .btn, .about .about_tehnology h5, #clients_cr h3, #team_cr h3 {
     font-size: 14px;
+    margin-top: 15px;
   }
   .about .about_tehnology {
     margin: 50px 0;
   }
-  #portfolio_cr h2 {
-    font-size: 17px;
-    margin-top: 50px;
-  }
-  #portfolio_cr ul li a{
+  #portfolio_cr ul li a, #clients_cr h5{
     font-size: 14px;
   }
-  #portfolio_cr .scrol_portfolio, .clients_info {
+  #portfolio_cr .scrol_portfolio, .clients_info, .clients_img {
     margin-top: 40px;
   }
   .about_tehnology .col-sm-6 {
     width: 50%;
   }
-  .features_info, .portfolio_gallery {
+  .features_info, .portfolio_gallery, .clients_img {
     flex-wrap: nowrap !important;
   }
   #features_cr h4 {
     margin-top: 5px;
     text-align: center;
   }
-  
+  .team_wrapper, .skills_info {
+    margin-top: 15px;
+  }
+  .our_skills{
+    margin-bottom: 40px;
+  }
+  .team_info {
+    padding: 0 5px !important;
+  }
 }
