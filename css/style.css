@@ -254,12 +254,12 @@ header .nav-item:hover .border_nav{
   padding-right: 5px;
 }
 
-.about h2{
+.about h2, #features_cr h2{
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
 }
-.about h3 {
+.about h3, #features_cr h3 {
   text-align: center;
   font-size: 16px;
   font-family: Lato-Bold;
@@ -348,12 +348,42 @@ header .nav-item:hover .border_nav{
 #portfolio_cr ul li a[aria-selected="true"]{
   color: #ff0036;
 }
-.portfolio_gallery {
+.portfolio_gallery, .features_info {
   max-width: 1400px;
   margin: auto;
 }
 
 /*--------------------- END PORTFOLIO ---------------------*/
+
+/*--------------------- FEATURES ---------------------*/
+#features_cr h2{
+  margin-top: 90px;
+}
+#features_cr h4 {
+  font-size: 16px;
+  font-family: Raleway-Medium;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 15px 0;
+  border: 1px solid #e7e7e7;
+}
+#features_cr h4:hover {
+  color: #fff;
+  background: #fd1717;
+}
+#features_cr h4:hover .features_img_active{
+  display: none;
+}
+#features_cr h4:hover .features_img_hover{
+  display: inline !important;
+}
+.features_img {
+  padding: 0 20px;
+}
+
+
+
+/*--------------------- END FEATURES ---------------------*/
 
 
 
@@ -375,6 +405,7 @@ header .nav-item:hover .border_nav{
     font-size: 15px;
   }
 
+
 }
 @media (max-width : 1000px) {
   .header_lg {
@@ -389,17 +420,42 @@ header .nav-item:hover .border_nav{
   .portfolio_gallery {
     flex-wrap: nowrap;
   }
+  .header_sm {
+    width: 100%;
+  }
+  .header_sm figcaption {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    width: 95%;
+
+    
+  }
  
 }
 @media (max-width : 480px) {
-  .header_sm figcaption{
+  .header_sm {
+    width: 100%;
+  }
+  .header_sm figcaption {
     position: absolute;
     top: 12%;
+    width: 90%;
+  }
+  .header_sm_info .big_info {
+    display: none;
+  }
+  .header_sm_info .small_info {
+    display: inline !important;
+  }
+  .header_sm_btn .btn {
+    font-size: 8px;
+    padding: .5rem 1.5rem !important;
   }
   .header_sm figcaption p{
     margin: 0;
   }
-  .about p {
+  .about p, #features_cr h4{
     font-size: 11px;
   }
   .about .card-header h5 .btn {
@@ -409,10 +465,10 @@ header .nav-item:hover .border_nav{
     font-size: 11px;
     padding: 5px;
   }
-  .about h2 {
+  .about h2, #features_cr h2 {
     font-size: 17px;
   }
-  .about h3 {
+  .about h3, #features_cr h3 {
     font-size: 14px;
   }
   .about .about_tehnology {
@@ -439,6 +495,15 @@ header .nav-item:hover .border_nav{
   }
   .about_tehnology .col-sm-6 {
     width: 50%;
+  }
+  .features_info {
+    flex-wrap: nowrap !important;
+  }
+  #features_cr h4 {
+    margin-top: 5px;
+  }
+  .features_img {
+   display: none;
   }
 
 }
