@@ -67,7 +67,7 @@ header .nav-link {
 }
 .border_nav {
   border-top: 3px solid #ff0036;
-  border-bottom: 3px solid #ff0036;
+  border-bottom: 4px solid #ff0036;
   width: 25px;
   min-height: 66px;
   position: absolute;
@@ -194,6 +194,7 @@ header .nav-item:hover .border_nav{
   font-family: Raleway-Bold;
 }
 .header_sm p {
+  font-size: 11px;
   font-family: Lato-Regular;
 }
 .header_sm figure {
@@ -204,18 +205,17 @@ header .nav-item:hover .border_nav{
   top: 27%;
 }
 .header_sm_btn .btn {
-  font-size: 11px;
+  font-size: 10px;
   font-family: Raleway-Medium;
 }
 .hidden-menu {
   text-align: left;
-  margin-top: 10px;
 }
 .hidden-menu li {
   margin-top: 5px;
 }
 .hidden-menu a{
-  font-size: 15px;
+  font-size: 18px;
   font-family: Raleway-Regular;
   color: #fff;
   text-transform: uppercase;
@@ -227,6 +227,133 @@ header .nav-item:hover .border_nav{
 
 /*--------------------- END HEADER_SM ---------------------*/
 
+
+/*--------------------- ABOUT ---------------------*/
+.about .card {
+  box-shadow: none !important;
+}
+.about .accordion h5:hover button {
+  color: red !important;
+  text-decoration: none !important;
+}
+.about .accordion h5 button[aria-expanded="true"] {
+  color: red !important;
+  text-decoration: none !important;
+}
+.about .accordion h5 button[aria-expanded="true"]::before{
+  content: '\f056';
+  font-family: "fontawesome";
+  padding-right: 5px;
+}
+.about .accordion h5 button[aria-expanded="false"] {
+  text-decoration: none !important;
+}
+.about .accordion h5 button[aria-expanded="false"]::before{
+  content: '\f055';
+  font-family: "fontawesome";
+  padding-right: 5px;
+}
+
+.about h2{
+  text-align: center;
+  font-size: 30px;
+  font-family: Raleway-Bold;
+}
+.about h3 {
+  text-align: center;
+  font-size: 16px;
+  font-family: Lato-Bold;
+}
+.about p {
+  color: #505050;
+  font-size: 16px;
+  font-family: Lato-Regular;
+}
+.about .card-header {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #dedede;
+  margin-bottom: 0.1px !important;
+  padding: 0;
+}
+.about .card-body {
+  border: 1px solid #dedede;
+  border-top: none;
+  margin-top: 0;
+  color: #505050;
+  font-size: 14px;
+  font-family: Lato-Regular;
+}
+.about .card-header h5 .btn {
+  text-transform: none;
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  margin: 0;
+  padding: 15px 0 15px 15px !important;
+  border-left: 1px solid #dedede;
+}
+.about .card .fa {
+  float: left;
+  padding: 24px;
+}
+.clip-polygon {
+  clip-path: polygon(35% 0%, 65% 0%, 80% 50%, 65% 100%, 35% 100%, 20% 50%);
+}
+.about .about_tehnology {
+  margin: 100px 0;
+}
+.about .about_tehnology h5 {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  color: #262626;
+}
+.about .about_tehnology p {
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: Lato-Regular;
+  color: #505050;
+}
+.about_tehnology_img .img_hover{
+  display: none;
+}
+.about_tehnology_img:hover .img_normal{
+  display: none;
+}
+.about_tehnology_img:hover .img_hover {
+  display: inline;
+}
+
+/*--------------------- END ABOUT ---------------------*/
+
+/*--------------------- PORTFOLIO ---------------------*/
+#portfolio_cr {
+  border-top: 1px solid #262626;
+  background: #262626;
+}
+#portfolio_cr h2{
+  text-align: center;
+  font-size: 30px;
+  font-family: Raleway-Bold;
+  color: #fff;
+  margin-top: 90px;
+}
+#portfolio_cr .scrol_portfolio{
+  margin-top: 90px;
+}
+#portfolio_cr ul li a{
+  font-size: 16px;
+  font-family: Lato-Bold;
+  color: #a4a4a4;
+}
+#portfolio_cr ul li a[aria-selected="true"]{
+  color: #ff0036;
+}
+.portfolio_gallery {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/*--------------------- END PORTFOLIO ---------------------*/
 
 
 
@@ -256,11 +383,62 @@ header .nav-item:hover .border_nav{
   .header_sm {
     display: block !important;
   }
+  .slider_about {
+    margin-top: 15px;
+  }
+  .portfolio_gallery {
+    flex-wrap: nowrap;
+  }
  
 }
 @media (max-width : 480px) {
   .header_sm figcaption{
-  position: absolute;
-  top: 12%;
-}
+    position: absolute;
+    top: 12%;
+  }
+  .header_sm figcaption p{
+    margin: 0;
+  }
+  .about p {
+    font-size: 11px;
+  }
+  .about .card-header h5 .btn {
+    font-size: 14px;
+  }
+  .about .card-body {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .about h2 {
+    font-size: 17px;
+  }
+  .about h3 {
+    font-size: 14px;
+  }
+  .about .about_tehnology {
+    margin: 50px 0;
+  }
+  .about .about_tehnology h5{
+    font-size: 14px;
+  }
+  .about .about_tehnology p {
+    font-size: 11px;
+  }
+  #portfolio_cr h2 {
+    font-size: 17px;
+    margin-top: 50px;
+  }
+  #portfolio_cr ul li a{
+    font-size: 14px;
+  }
+  #portfolio_cr .scrol_portfolio{
+    margin-top: 40px;
+  }
+  .portfolio_gallery {
+    flex-wrap: nowrap;
+  }
+  .about_tehnology .col-sm-6 {
+    width: 50%;
+  }
+
 }
