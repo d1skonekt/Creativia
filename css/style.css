@@ -36,8 +36,8 @@ footer {
           flex: 0 0 auto;
 }
 
-/*---------------------  HEADER ---------------------*/
 
+/*---------------------  HEADER ---------------------*/
 nav {
   background-color: #07070b;
 }
@@ -108,6 +108,7 @@ header .nav-item:hover .border_nav{
 
 
 /*--------------------- END HEADER ---------------------*/
+
 
 /*---------------------  HEADER_SM ---------------------*/
 
@@ -190,7 +191,7 @@ header .nav-item:hover .border_nav{
   text-align: center;
 }
 .header_sm h1 {
-  font-size: 17px;
+  font-size: 30px;
   font-family: Raleway-Bold;
 }
 .header_sm p {
@@ -259,7 +260,7 @@ header .nav-item:hover .border_nav{
   font-size: 30px;
   font-family: Raleway-Bold;
 }
-.about h3, #features_cr h3 {
+.about h3, #features_cr h3, #clients_cr h3 {
   text-align: center;
   font-size: 16px;
   font-family: Lato-Bold;
@@ -325,12 +326,13 @@ header .nav-item:hover .border_nav{
 
 /*--------------------- END ABOUT ---------------------*/
 
+
 /*--------------------- PORTFOLIO ---------------------*/
 #portfolio_cr {
   border-top: 1px solid #262626;
   background: #262626;
 }
-#portfolio_cr h2{
+#portfolio_cr h2, #clients_cr h2{
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
@@ -355,8 +357,12 @@ header .nav-item:hover .border_nav{
 
 /*--------------------- END PORTFOLIO ---------------------*/
 
+
 /*--------------------- FEATURES ---------------------*/
-#features_cr h2{
+#features_cr {
+  padding: 20px;
+}
+#features_cr h2 {
   margin-top: 90px;
 }
 #features_cr h4 {
@@ -380,10 +386,37 @@ header .nav-item:hover .border_nav{
 .features_img {
   padding: 0 20px;
 }
-
-
-
 /*--------------------- END FEATURES ---------------------*/
+
+
+/*--------------------- CLIENTS ---------------------*/
+#clients_cr {
+  background: url("../img/clients/clients_bg_.png");
+  padding: .1px;
+}
+#clients_cr h3{
+  color: #a4a4a4;
+}
+.clients_info {
+  margin-top: 100px;
+}
+#clients_cr h4{
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.clients_info p {
+  font-size: 16px;
+  font-family: Lato-Regular;
+  color: #a4a4a4;
+}
+.clients_info ul{
+  margin-top: 35px;
+}
+
+/*--------------------- END CLIENTS ---------------------*/
 
 
 
@@ -407,6 +440,7 @@ header .nav-item:hover .border_nav{
 
 
 }
+
 @media (max-width : 1000px) {
   .header_lg {
     display: none;
@@ -428,11 +462,26 @@ header .nav-item:hover .border_nav{
     top: 12%;
     left: 2%;
     width: 95%;
-
-    
   }
- 
+  .features_img {
+    padding: 5px;
+  }
+
+@media (max-width : 900px) {
+  .features_img {
+    padding: 0;
+  }
+  .features_info h4{
+    font-size: 14px;
+  }
 }
+
+@media (max-width : 600px){
+  .features_info {
+    flex-wrap: nowrap !important;
+  }
+}
+
 @media (max-width : 480px) {
   .header_sm {
     width: 100%;
@@ -442,7 +491,7 @@ header .nav-item:hover .border_nav{
     top: 12%;
     width: 90%;
   }
-  .header_sm_info .big_info {
+  .header_sm_info .big_info, .features_img {
     display: none;
   }
   .header_sm_info .small_info {
@@ -455,30 +504,21 @@ header .nav-item:hover .border_nav{
   .header_sm figcaption p{
     margin: 0;
   }
-  .about p, #features_cr h4{
+  .about p, #features_cr h4, .clients_info p, .about .about_tehnology p{
     font-size: 11px;
-  }
-  .about .card-header h5 .btn {
-    font-size: 14px;
   }
   .about .card-body {
     font-size: 11px;
     padding: 5px;
   }
-  .about h2, #features_cr h2 {
+  .about h2, #features_cr h2, #clients_cr h2, .header_sm h1{
     font-size: 17px;
   }
-  .about h3, #features_cr h3 {
+  .about h3, #features_cr h3, #clients_cr h4, .about .card-header h5 .btn, .about .about_tehnology h5, #clients_cr h3 {
     font-size: 14px;
   }
   .about .about_tehnology {
     margin: 50px 0;
-  }
-  .about .about_tehnology h5{
-    font-size: 14px;
-  }
-  .about .about_tehnology p {
-    font-size: 11px;
   }
   #portfolio_cr h2 {
     font-size: 17px;
@@ -487,23 +527,18 @@ header .nav-item:hover .border_nav{
   #portfolio_cr ul li a{
     font-size: 14px;
   }
-  #portfolio_cr .scrol_portfolio{
+  #portfolio_cr .scrol_portfolio, .clients_info {
     margin-top: 40px;
-  }
-  .portfolio_gallery {
-    flex-wrap: nowrap;
   }
   .about_tehnology .col-sm-6 {
     width: 50%;
   }
-  .features_info {
+  .features_info, .portfolio_gallery {
     flex-wrap: nowrap !important;
   }
   #features_cr h4 {
     margin-top: 5px;
+    text-align: center;
   }
-  .features_img {
-   display: none;
-  }
-
+  
 }
