@@ -256,12 +256,12 @@ header .nav-item:hover .border_nav{
   padding-right: 5px;
 }
 
-.about h2, #features_cr h2 , #team_cr h2{
+.about h2, #features_cr h2 , #team_cr h2,#plans_bestseller h2{
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
 }
-.about h3, #features_cr h3, #clients_cr h3 , #team_cr h3{
+.about h3, #features_cr h3,#plans_bestseller h3, #clients_cr h3 , #team_cr h3,#services_cr h3{
   text-align: center;
   font-size: 16px;
   font-family: Lato-Bold;
@@ -334,7 +334,7 @@ header .nav-item:hover .border_nav{
   border-top: 1px solid #262626;
   background: #262626;
 }
-#portfolio_cr h2, #clients_cr h2 {
+#portfolio_cr h2, #clients_cr h2, #services_cr h2 {
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
@@ -364,7 +364,7 @@ header .nav-item:hover .border_nav{
 #features_cr {
   padding: 20px;
 }
-#features_cr h2, #team_cr h2 {
+#features_cr h2, #team_cr h2,#plans_bestseller h2{
   margin-top: 90px;
 }
 #features_cr h4 {
@@ -393,23 +393,23 @@ header .nav-item:hover .border_nav{
 
 /*--------------------- CLIENTS ---------------------*/
 #clients_cr {
-  background: url("../img/clients/clients_bg_.png");
+  background: #272727;
   padding: .1px;
 }
-#clients_cr h3{
+#clients_cr h3, #services_cr h3{
   color: #a4a4a4;
 }
 .clients_info, .scrol_client, .team_scroll, .skills_info {
   margin-top: 100px;
 }
-#clients_cr h4{
+#clients_cr h4, .services_info h4{
   font-size: 20px;
   font-family: Raleway-Medium;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
-.clients_info p {
+.clients_info p, .services_info p {
   font-size: 16px;
   font-family: Lato-Regular;
   color: #a4a4a4;
@@ -483,8 +483,42 @@ header .nav-item:hover .border_nav{
 .our_skills {
   margin-bottom: 100px;
 }
-
 /*--------------------- END TEAM ---------------------*/
+
+
+/*--------------------- SERVICES ---------------------*/
+#services_cr {
+  padding: .1px;
+  background: #272727;
+}
+.services_info {
+  margin-top: 50px;
+}
+.services_info h4 {
+  text-align: left;
+}
+.services_info p {
+  margin-top: 20px;
+  padding: 15px;
+  background: #343434;
+}
+.services_info:hover  p{
+  background: #3d2329;
+  color: #fff;
+}
+.services_active, .services_hover {
+  margin-right: 30px;
+}
+.services_info:hover .services_active{
+  display: none;
+}
+.services_info:hover .services_hover {
+  display: inline !important;
+}
+
+
+/*--------------------- END SERVICES ---------------------*/
+
 
 
 
@@ -586,25 +620,25 @@ header .nav-item:hover .border_nav{
   .header_sm figcaption p{
     margin: 0;
   }
-  .about p, #features_cr h4, .team_wrapper h5, .clients_info p, .about .about_tehnology p{
+  .about p, #features_cr h4, .team_wrapper h5, .clients_info p, .about .about_tehnology p, .services_info p{
     font-size: 11px;
   }
   .about .card-body {
     font-size: 11px;
     padding: 5px;
   }
-  .about h2, #features_cr h2, #clients_cr h2, .header_sm h1, #team_cr h2, #portfolio_cr h2{
-    font-size: 17px;
-    margin-top: 40px;
+  h2, .header_sm h1 {
+    font-size: 17px !important;
+    margin-top: 40px !important;
   }
-  .about h3, #features_cr h3, #clients_cr h4, .team_wrapper h4, .about .card-header h5 .btn, .about .about_tehnology h5, #clients_cr h3, #team_cr h3 {
-    font-size: 14px;
-    margin-top: 15px;
+  h3, #clients_cr h4, .team_wrapper h4, .about .card-header h5 .btn, .about .about_tehnology h5 {
+    font-size: 14px !important;
+    margin-top: 15px !important;
   }
   .about .about_tehnology {
     margin: 50px 0;
   }
-  #portfolio_cr ul li a, #clients_cr h5{
+  #portfolio_cr ul li a, #clients_cr h5, .services_info h4{
     font-size: 14px;
   }
   #portfolio_cr .scrol_portfolio, .clients_info, .clients_img {
@@ -620,7 +654,7 @@ header .nav-item:hover .border_nav{
     margin-top: 5px;
     text-align: center;
   }
-  .team_wrapper, .skills_info {
+  .team_wrapper, .skills_info, .services_info {
     margin-top: 15px;
   }
   .our_skills{
