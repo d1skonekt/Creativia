@@ -29,30 +29,30 @@
                       <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                           <a class="navbar-brand" href="index.html"><img src="img/header/logo.png" alt=""></a>
-                          <ul class="navbar-nav ">
+                          <ul class="navbar-nav">
                             <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">Home</a>
+                              <span class="border_nav"></span><a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">About us</a>
+                              <span class="border_nav"></span><a class="nav-link" href="#about_cr" data-target="anchor">About us</a>
                             </li>
                              <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">Portfolio</a>
+                              <span class="border_nav"></span><a class="nav-link" href="#portfolio_cr" data-target="anchor">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">Clients</a>
+                              <span class="border_nav"></span><a class="nav-link" href="#clients_cr" data-target="anchor">Clients</a>
                             </li>
                             <li class="nav-item">
-                               <span class="border_nav"></span><a class="nav-link" href="#">Team</a>
+                               <span class="border_nav"></span><a class="nav-link" href="#team_cr" data-target="anchor">Team</a>
                             </li>
                              <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">Services</a>
+                              <span class="border_nav"></span><a class="nav-link" href="#services_cr" data-target="anchor">Services</a>
                             </li>
                             <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">Blog</a>
+                              <span class="border_nav"></span><a class="nav-link" href="#blog_cr" data-target="anchor">Blog</a>
                             </li>
                             <li class="nav-item">
-                              <span class="border_nav"></span><a class="nav-link" href="#">Contact</a>
+                              <span class="border_nav"></span><a class="nav-link" href="#contact_cr" data-target="anchor">Contact</a>
                             </li>
                           </ul>
                         </div>
@@ -166,12 +166,13 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
+              <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
           </header>
           <!-- ********************** END HEADER ********************** -->
 
 
           <!-- **********************  HEADER sm ********************** -->
-          <div class="header_sm d-none p-0">
+          <div class="header_sm d-none p-0" id="header_sm_cr">
           	<input type="checkbox" id="hmt" class="hidden-menu-ticker">
           	<label class="btn-menu" for="hmt">
           	  <span class="first"></span>
@@ -179,14 +180,14 @@
           	  <span class="third"></span>
           	</label>
           	<ul class="hidden-menu">
-          	  <li><a href="">Home</a></li>
-          	  <li><a href="">About Us</a></li>
-          	  <li><a href="">Portfolio</a></li>
-          	  <li><a href="">Clients</a></li>
-          	  <li><a href="">Team</a></li>
-          	  <li><a href="">Services</a></li>
-          	  <li><a href="">Blog</a></li>
-              <li><a href="">Contact</a></li>
+          	  <li><a href="#header_sm_cr" data-target="anchor">Home</a></li>
+          	  <li><a href="#about_cr" data-target="anchor">About Us</a></li>
+          	  <li><a href="#portfolio_cr" data-target="anchor">Portfolio</a></li>
+          	  <li><a href="#clients_cr" data-target="anchor">Clients</a></li>
+          	  <li><a href="#team_cr" data-target="anchor">Team</a></li>
+          	  <li><a href="#services_cr" data-target="anchor">Services</a></li>
+          	  <li><a href="#blog_cr" data-target="anchor">Blog</a></li>
+              <li><a href="#contact_cr" data-target="anchor">Contact</a></li>
           	</ul>
           	<div class="header_sm_info ">
           		<figure>
@@ -274,17 +275,65 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 slider_about">
-                  <div class="row">
-                    <div class="clip-polygon">
-                      <img src="img/header/header_slider_1.png" alt="" class="img-fluid">
+                <div class="col-lg-6 col-md-6 col-sm-12 slider_about d-flex flex-column justify-content-center">
+                  <div class="container_tab">
+                    <div class="classic-tabs">
+                      <ul class="nav tabs-cyan justify-content-center" id="tab_about" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link  waves-light active show" id="hwo_we_tab" data-toggle="tab" href="#hwo_we"
+                            role="tab" aria-controls="hwo_we" aria-selected="true">first</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link waves-light" id="tehnical_proces_tab" data-toggle="tab" href="#tehnical_proces" role="tab"
+                            aria-controls="tehnical_proces" aria-selected="false">seccond</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link waves-light" id="planning_work_tab" data-toggle="tab" href="#planning_work" role="tab"
+                            aria-controls="planning_work" aria-selected="false">third</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link waves-light" id="about_support_tab" data-toggle="tab" href="#about_support" role="tab"
+                            aria-controls="about_support" aria-selected="false">fourth</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link waves-light" id="teach_tab" data-toggle="tab" href="#teach" role="tab"
+                            aria-controls="teach" aria-selected="false">fifth</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="tab_about_content">
+                        <div class="tab-pane fade active show" id="hwo_we" role="tabpanel" aria-labelledby="hwo_we_tab">
+                          <div class="clip-polygon">
+                            <img src="img/about/about_1.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="tehnical_proces" role="tabpanel" aria-labelledby="tehnical_proces_tab">
+                          <div class="clip-polygon">
+                            <img src="img/about/about_2.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="planning_work" role="tabpanel" aria-labelledby="planning_work_tab">
+                          <div class="clip-polygon">
+                            <img src="img/about/about_3.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="about_support" role="tabpanel" aria-labelledby="about_support_tab">
+                          <div class="clip-polygon">
+                            <img src="img/about/about_4.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="teach" role="tabpanel" aria-labelledby="teach_tab">
+                          <div class="clip-polygon">
+                            <img src="img/about/about_5.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="container mt-5 text-center">
-              <img src="img/about/scroll bar.png" alt="" class="img-fluid">
+              <img src="img/about/scroll_bar.png" alt="" class="img-fluid">
             </div>
             <div class="container">
               <div class="row about_tehnology">
@@ -366,159 +415,202 @@
               <div class="tab-content rounded-bottom" id="myClassicTabContent">
                 <div class="tab-pane fade active show" id="all_portfolio" role="tabpanel" aria-labelledby="all-tab">
                   <div class="row portfolio_gallery mt-5">
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                      <img src="img/portfolio/web_1.png" alt=""class="img-fluid">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
+                      <img src="img/portfolio/web_1.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_2.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_3.png" alt="" class="img-fluid">
                     </div>
                   </div>
                   <div class="row portfolio_gallery">
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_1.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_2.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_7.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_4.png" alt="" class="img-fluid">
                     </div>
                   </div>
                   <div class="row portfolio_gallery">
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_1.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_2.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_3.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_4.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_5.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_6.png" alt="" class="img-fluid">
                     </div>
                   </div>
                   <div class="row portfolio_gallery">
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_3.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_5.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_6.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_8.png" alt="" class="img-fluid">
                     </div>
                   </div>
                   <div class="row portfolio_gallery">
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                      <img src="img/portfolio/web_4.png" alt=""class="img-fluid">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
+                      <img src="img/portfolio/web_4.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_5.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_6.png" alt="" class="img-fluid">
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="illustration_portfolio" role="tabpanel" aria-labelledby="illustration-tab">
                   <div class="row portfolio_gallery mt-5">
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_1.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_2.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_3.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_4.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_5.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+                    <div class="col-lg-2 col-md-2 col-sm-2 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/illustr_6.png" alt="" class="img-fluid">
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="digital_portfolio" role="tabpanel" aria-labelledby="digital-tab">
                   <div class="row portfolio_gallery mt-5">
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_1.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_2.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_7.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                    <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/art_4.png" alt="" class="img-fluid">
                     </div>
                   </div>
                  <div class="row portfolio_gallery">
-                  <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                    <span class="portfolio_gallery_hover">design name</span>
                     <img src="img/portfolio/art_3.png" alt="" class="img-fluid">
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                    <span class="portfolio_gallery_hover">design name</span>
                     <img src="img/portfolio/art_5.png" alt="" class="img-fluid">
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                    <span class="portfolio_gallery_hover">design name</span>
                     <img src="img/portfolio/art_6.png" alt="" class="img-fluid">
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-3 p-0 portfolio_gallery_hover_parent">
+                    <span class="portfolio_gallery_hover">design name</span>
                     <img src="img/portfolio/art_8.png" alt="" class="img-fluid">
                   </div>
                  </div>
                 </div>
                 <div class="tab-pane fade" id="design_portfolio" role="tabpanel" aria-labelledby="design-tab">
                   <div class="row portfolio_gallery mt-5">
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                      <img src="img/portfolio/web_1.png" alt=""class="img-fluid">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
+                      <img src="img/portfolio/web_1.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_2.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_3.png" alt="" class="img-fluid">
                     </div>
                   </div>
                   <div class="row portfolio_gallery">
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                      <img src="img/portfolio/web_4.png" alt=""class="img-fluid">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
+                      <img src="img/portfolio/web_4.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_5.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_6.png" alt="" class="img-fluid">
                     </div>
                   </div>
                   <div class="row portfolio_gallery">
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                      <img src="img/portfolio/web_7.png" alt=""class="img-fluid">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
+                      <img src="img/portfolio/web_7.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_8.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 p-0 portfolio_gallery_hover_parent">
+                      <span class="portfolio_gallery_hover">design name</span>
                       <img src="img/portfolio/web_9.png" alt="" class="img-fluid">
                     </div>
                   </div>
@@ -682,7 +774,7 @@
                       <span>
                         <a href="https://www.facebook.com/"><img src="img/team/Facebook.png" alt=""></a>
                         <a href="https://twitter.com/"><img src="img/team/Twitter.png" alt=""></a>
-                        <a href="https://www.google.com/"><img src="img/team/Google +.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="img/team/Google.png" alt=""></a>
                       </span>
                       <img src="img/team/iron_man.png" alt="" class="img-fluid">
                     </div>
@@ -696,7 +788,7 @@
                       <span>
                         <a href="https://www.facebook.com/"><img src="img/team/Facebook.png" alt=""></a>
                         <a href="https://twitter.com/"><img src="img/team/Twitter.png" alt=""></a>
-                        <a href="https://www.google.com/"><img src="img/team/Google +.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="img/team/Google.png" alt=""></a>
                       </span>
                       <img src="img/team/hulk.png" alt="" class="img-fluid">
                     </div>
@@ -710,7 +802,7 @@
                       <span>
                         <a href="https://www.facebook.com/"><img src="img/team/Facebook.png" alt=""></a>
                         <a href="https://twitter.com/"><img src="img/team/Twitter.png" alt=""></a>
-                        <a href="https://www.google.com/"><img src="img/team/Google +.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="img/team/Google.png" alt=""></a>
                       </span>
                       <img src="img/team/strange.png" alt="" class="img-fluid">
                     </div>
@@ -724,7 +816,7 @@
                       <span>
                         <a href="https://www.facebook.com/"><img src="img/team/Facebook.png" alt=""></a>
                         <a href="https://twitter.com/"><img src="img/team/Twitter.png" alt=""></a>
-                        <a href="https://www.google.com/"><img src="img/team/Google +.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="img/team/Google.png" alt=""></a>
                       </span>
                       <img src="img/team/thor.png" alt="" class="img-fluid">
                     </div>
@@ -735,7 +827,7 @@
               </div>
             </div>
             <div class="text-center team_scroll container">
-              <img src="img/team/scroll bar.png" alt="" class="img-fluid">
+              <img src="img/team/scroll_bar.png" alt="" class="img-fluid">
             </div>
             <h2> our <span class="red-text">Skils</span></h2>
             <h3>
@@ -1009,25 +1101,72 @@
               <img src="img/clients/scrol_portfolio.png" alt="" class="img-fluid scrol_client">
             </div>
           </div>
-
           <!-- ********************** END BLOG  ********************** -->
+
+
+          <!-- ********************** CONTACT  ********************** -->
+          <div id="contact_cr" class="">
+            <h2>Fine us <span class="red-text">here</span></h2>
+            <h3>
+              Lorem ipsum dolor sit amet, consectetur <span class="red-text">adipiscing elit</span>. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+            </h3>
+            <div class="contact_bg">
+              <div class="contact_info">
+                <div class="row justify-content-center flex">
+                  <div class="col-lg-4 col-md-4 col-sm-6 d-flex flex-column justify-content-center">
+                    <div class="container_adres">
+                      <h5>egypt, creativia</h5>
+                      <h5>Address: cairo 123</h5>
+                      <h5>Phone: +0201091915171</h5>
+                      <h5>Email: <a href="mailto:vlad@htmlbook.ru">gfx3mr@gmail.com</a></h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                    <form class="border border-light p-5">
+                        <p class="h4 mb-4">SEND MESSAGE</p>
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <label>Subject</label>
+                        <select class="browser-default custom-select mb-4">
+                            <option value="" disabled>Choose option</option>
+                            <option value="1" selected>Feedback</option>
+                            <option value="2">Report a bug</option>
+                            <option value="3">Feature request</option>
+                            <option value="4">Feature request</option>
+                        </select>
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                            <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+                        </div>
+                        <button class="btn btn-dark" type="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ********************** END CONTACT  ********************** -->
         </div>
 
-        <footer>
-
+        <footer class="d-flex justify-content-center align-items-center">
+            <a href="#header_cr" data-target="anchor"><img src="img/footer/logo_footer.png" alt="" class="img-fluid"></a>
         </footer>
 
 
 
 
-	    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	    <script src="js/jquery-3.3.1.min.js"></script>
 	    <!-- Bootstrap tooltips -->
-	    <script type="text/javascript" src="js/popper.min.js"></script>
+	    <script src="js/popper.min.js"></script>
 	    <!-- Bootstrap core JavaScript -->
-	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
 	    <!-- MDB core JavaScript -->
-	    <script type="text/javascript" src="js/mdb.js"></script>
+	    <script src="js/mdb.js"></script>
 	    <!-- MY  JavaScript -->
+      <script src="js/custom.js"></script>
 	    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </div>
 </body>
