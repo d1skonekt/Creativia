@@ -399,10 +399,10 @@ header .nav-item:hover .border_nav{
 #clients_cr h3, #services_cr h3{
   color: #a4a4a4;
 }
-.clients_info, .scrol_client, .team_scroll, .skills_info {
+.clients_info, .scrol_client, .team_scroll, .skills_info, .prise_set {
   margin-top: 100px;
 }
-#clients_cr h4, .services_info h4{
+#clients_cr h4, .services_info h4, .prise_set h4{
   font-size: 20px;
   font-family: Raleway-Medium;
   color: #fff;
@@ -480,7 +480,7 @@ header .nav-item:hover .border_nav{
   font-family: Lato-Regular;
   color: #505050;
 }
-.our_skills {
+.our_skills, #plans_bestseller{
   margin-bottom: 100px;
 }
 /*--------------------- END TEAM ---------------------*/
@@ -514,6 +514,59 @@ header .nav-item:hover .border_nav{
 }
 .services_info:hover .services_hover {
   display: inline !important;
+}
+.prise_set {
+   border: 1px solid #f2f2f2;
+}
+.prise_set h4 {
+  background: #262626;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.prise_set h5, .prise_set h6 {
+  font-size: 16px;
+  font-family: Lato-Regular;
+  text-transform: uppercase;
+  padding: 20px 0 13px 0;
+  border-top: 1px solid #f2f2f2;
+}
+.prise_set h6+p{
+  border-top: 1px solid #f2f2f2;
+}
+.prise_set h6 {
+  text-transform: none;
+}
+.prise_set .prise {
+  font-size: 50px;
+  font-family: Lato-Black;
+  color: #262626;
+  background: #f2f2f2;
+  margin-bottom: 0;
+}
+.prise_set sub {
+  font-size: 16px;
+  font-family: Lato-Regular;
+}
+.prise_set:hover .prise {
+  color: #fff;
+  background: #ff0000;
+}
+.prise_set .order_now {
+  padding: 20px 0 13px 0;
+}
+.prise_set .order_now a{
+  font-size: 18px;
+  font-family: Raleway-Regular;
+  text-transform: uppercase;
+  color: #fff;
+  background: #262626;
+  padding: 10px 50px;
+}
+.prise_set:hover a{
+  background: #ff0000;
+}
+.prise_wrapper {
+  margin-risght: 2px;
 }
 
 
@@ -568,6 +621,9 @@ header .nav-item:hover .border_nav{
   .features_img {
     padding: 5px;
   }
+  .prise_set .order_now a{
+    padding: 10px 15px;
+  }
 
 @media (max-width : 900px) {
   .features_img {
@@ -579,6 +635,7 @@ header .nav-item:hover .border_nav{
   .clients_img, .scrol_client, .team_scroll, .team_wrapper, .skills_info {
     margin-top: 40px;
   }
+  
 }
 
 @media (max-width : 600px){
@@ -594,8 +651,12 @@ header .nav-item:hover .border_nav{
   .features_info h4 {
     text-align: center;
   }
-
-
+  .prise_wrapper {
+    width: 50%;
+  }
+  #plans_bestseller .container {
+    width: 90%
+  }
 }
 
 @media (max-width : 480px) {
@@ -617,13 +678,13 @@ header .nav-item:hover .border_nav{
     font-size: 8px;
     padding: .5rem 1.5rem !important;
   }
-  .header_sm figcaption p{
-    margin: 0;
+  .header_sm figcaption p, .header_sm figcaption h1{
+    margin: 0!important;
   }
-  .about p, #features_cr h4, .team_wrapper h5, .clients_info p, .about .about_tehnology p, .services_info p{
+  .about p, #features_cr h4, .our_skills h5, .team_wrapper h5, .clients_info p, .about .about_tehnology p, .services_info p{
     font-size: 11px;
   }
-  .about .card-body {
+  .about .card-body,.prise_set h4,.prise_set h5, .prise_set h6, .prise_set .order_now a{
     font-size: 11px;
     padding: 5px;
   }
@@ -631,20 +692,20 @@ header .nav-item:hover .border_nav{
     font-size: 17px !important;
     margin-top: 40px !important;
   }
-  h3, #clients_cr h4, .team_wrapper h4, .about .card-header h5 .btn, .about .about_tehnology h5 {
+  h3, #clients_cr h4, .team_wrapper h4, .services_info h4, .about .card-header h5 .btn, .about .about_tehnology h5, .our_skills h4 {
     font-size: 14px !important;
     margin-top: 15px !important;
   }
   .about .about_tehnology {
     margin: 50px 0;
   }
-  #portfolio_cr ul li a, #clients_cr h5, .services_info h4{
+  #portfolio_cr ul li a, #clients_cr h5, .services_info h4 {
     font-size: 14px;
   }
-  #portfolio_cr .scrol_portfolio, .clients_info, .clients_img {
+  #portfolio_cr .scrol_portfolio, .clients_info, .clients_img, .prise_set {
     margin-top: 40px;
   }
-  .about_tehnology .col-sm-6 {
+  .about_tehnology .col-sm-6 ,.prise_wrapper {
     width: 50%;
   }
   .features_info, .portfolio_gallery, .clients_img {
@@ -657,10 +718,17 @@ header .nav-item:hover .border_nav{
   .team_wrapper, .skills_info, .services_info {
     margin-top: 15px;
   }
-  .our_skills{
+  .our_skills, #plans_bestseller{
     margin-bottom: 40px;
   }
   .team_info {
     padding: 0 5px !important;
   }
+  .prise {
+    font-size: 17px !important;
+  }
+  .prise sub{
+    font-size: 11px !important;
+  }
+  
 }
