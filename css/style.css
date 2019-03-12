@@ -256,12 +256,12 @@ header .nav-item:hover .border_nav{
   padding-right: 5px;
 }
 
-.about h2, #features_cr h2 , #team_cr h2,#plans_bestseller h2{
+h2 {
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
 }
-.about h3, #features_cr h3,#plans_bestseller h3, #clients_cr h3 , #team_cr h3,#services_cr h3{
+h3 {
   text-align: center;
   font-size: 16px;
   font-family: Lato-Bold;
@@ -334,14 +334,14 @@ header .nav-item:hover .border_nav{
   border-top: 1px solid #262626;
   background: #262626;
 }
-#portfolio_cr h2, #clients_cr h2, #services_cr h2 {
+#portfolio_cr h2, #clients_cr h2, #services_cr h2,#blog_cr h2,#follow_cr h2 {
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
   color: #fff;
   margin-top: 90px;
 }
-#portfolio_cr .scrol_portfolio{
+#portfolio_cr .scrol_portfolio, .blog_info{
   margin-top: 90px;
 }
 #portfolio_cr ul li a{
@@ -399,7 +399,7 @@ header .nav-item:hover .border_nav{
 #clients_cr h3, #services_cr h3{
   color: #a4a4a4;
 }
-.clients_info, .scrol_client, .team_scroll, .skills_info, .prise_set {
+.clients_info, .scrol_client, .team_scroll, .skills_info, .prise_set, #last_twit h2 {
   margin-top: 100px;
 }
 #clients_cr h4, .services_info h4, .prise_set h4{
@@ -449,7 +449,6 @@ header .nav-item:hover .border_nav{
   height: 100%;
   position: absolute;
   top: 0;
-  
   opacity: 0;
   transition: all 1s ease-out;
   background: #414141;
@@ -475,12 +474,12 @@ header .nav-item:hover .border_nav{
   text-transform: uppercase;
   color: #505050;
 }
-.team_wrapper h5, .skills_info h5{
+.team_wrapper h5, .skills_info h5, #last_twit h3{
   font-size: 16px;
   font-family: Lato-Regular;
   color: #505050;
 }
-.our_skills, #plans_bestseller{
+.our_skills, #plans_bestseller, .more_blog_arrow{
   margin-bottom: 100px;
 }
 /*--------------------- END TEAM ---------------------*/
@@ -491,7 +490,7 @@ header .nav-item:hover .border_nav{
   padding: .1px;
   background: #272727;
 }
-.services_info {
+.services_info, .more_blog_arrow,.follow_social {
   margin-top: 50px;
 }
 .services_info h4 {
@@ -565,12 +564,88 @@ header .nav-item:hover .border_nav{
 .prise_set:hover a{
   background: #ff0000;
 }
-.prise_wrapper {
-  margin-risght: 2px;
+/*--------------------- END SERVICES ---------------------*/
+
+
+/*--------------------- BLOG  ---------------------*/
+#last_twit {
+  background: url("../img/twit/twit_bg.png") no-repeat 10% bottom  #262626;
+  background-size: contain;
+  padding: 0.1px;
+}
+#last_twit h3 {
+  color: #fff;
+  margin-top: 15px;
+}
+#blog_cr h2 {
+  color: #262626;
+}
+#blog_cr h4 {
+  font-size: 20px;
+  font-family: Raleway-SemiBold;
+  color: #2e2e2e;
+}
+#blog_cr h5{
+  font-size: 12px;
+  font-family: Lato-Regular;
+  color: #a2a2a2;
+  margin-top: 15px;
+}
+#blog_cr i {
+ margin-right: 5px;
+}
+#blog_cr .blog_icons {
+  margin-right: 15px;
+}
+#blog_cr p{
+  font-size: 14px;
+  font-family: Lato-Regular;
+  color: #505050;
+  margin-bottom: 0;
+}
+#blog_cr .button_blog {
+  padding: 8px 0;
+}
+#blog_cr .button_blog a{
+  font-size: 16px;
+  font-family: Lato-Regular;
+  text-transform: uppercase;
+  color: #fff;
+  background: #262626;
+  padding: 10px 15px;
+}
+#blog_cr .button_blog a:hover {
+  background: red;
+}
+.more_blog_arrow {
+  text-align: center;
+  font-size: 20px;
+}
+.more_blog_arrow  a{
+  color: #4d4d4d;
+  background-color: #d2d2d2;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+#follow_cr {
+  padding: 0.1px;
+  background: url(../img/header/header_slider_0.png) no-repeat center top;
+  background-size: cover;
+}
+.follow_social_icon {
+  margin-right: 4%;
+}
+.follow_social_icon:hover .follow_active{
+  display: none;
+}
+.follow_social_icon:hover .follow_hover {
+  display: inline !important;
 }
 
 
-/*--------------------- END SERVICES ---------------------*/
+
+/*--------------------- END BLOG ---------------------*/
+
 
 
 
@@ -681,7 +756,7 @@ header .nav-item:hover .border_nav{
   .header_sm figcaption p, .header_sm figcaption h1{
     margin: 0!important;
   }
-  .about p, #features_cr h4, .our_skills h5, .team_wrapper h5, .clients_info p, .about .about_tehnology p, .services_info p{
+  .about p, #features_cr h4,#blog_cr p,#blog_cr .button_blog a, .our_skills h5, .team_wrapper h5, .clients_info p, .about .about_tehnology p, .services_info p{
     font-size: 11px;
   }
   .about .card-body,.prise_set h4,.prise_set h5, .prise_set h6, .prise_set .order_now a{
@@ -692,15 +767,15 @@ header .nav-item:hover .border_nav{
     font-size: 17px !important;
     margin-top: 40px !important;
   }
-  h3, #clients_cr h4, .team_wrapper h4, .services_info h4, .about .card-header h5 .btn, .about .about_tehnology h5, .our_skills h4 {
+  h3, #clients_cr h4, .team_wrapper h4,.follow_social, .services_info h4, .about .card-header h5 .btn, .about .about_tehnology h5, .our_skills h4 {
     font-size: 14px !important;
     margin-top: 15px !important;
   }
   .about .about_tehnology {
     margin: 50px 0;
   }
-  #portfolio_cr ul li a, #clients_cr h5, .services_info h4 {
-    font-size: 14px;
+  #portfolio_cr ul li a, #clients_cr h5, .services_info h4, #last_twit h3,#blog_cr h4 {
+    font-size: 14px !important;
   }
   #portfolio_cr .scrol_portfolio, .clients_info, .clients_img, .prise_set {
     margin-top: 40px;
@@ -715,10 +790,10 @@ header .nav-item:hover .border_nav{
     margin-top: 5px;
     text-align: center;
   }
-  .team_wrapper, .skills_info, .services_info {
+  .team_wrapper, .skills_info, .services_info, .more_blog_arrow {
     margin-top: 15px;
   }
-  .our_skills, #plans_bestseller{
+  .our_skills, #plans_bestseller, .more_blog_arrow{
     margin-bottom: 40px;
   }
   .team_info {
