@@ -38,6 +38,9 @@ footer {
 
 
 /*---------------------  HEADER ---------------------*/
+.red-text {
+  color: #ff0036 !important;
+}
 nav {
   background-color: #07070b;
 }
@@ -57,7 +60,7 @@ header .nav-item {
   font-size: 18px;
   font-family: Raleway-Regular;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin: 0 10px;
   position: relative;
 }
 header .nav-link {
@@ -66,15 +69,26 @@ header .nav-link {
   border-radius: 5px;
 }
 .border_nav {
-  border-top: 3px solid #ff0036;
+  border-top: 4px solid #ff0036;
   border-bottom: 4px solid #ff0036;
-  width: 25px;
+  width: 26px;
   min-height: 66px;
   position: absolute;
   top: -6px;
-  left: 38%;
+  left: 40%;
   opacity: 0;
+  z-index: 2;
 }
+.header_lg ul li:nth-child(1) .border_nav,.header_lg ul li:nth-child(7) .border_nav,.header_lg ul li:nth-child(5) .border_nav {
+  left: 31%;
+}
+.header_lg ul li:nth-child(4) .border_nav {
+  left: 35%;
+}
+.header_lg ul li:nth-child(8) .border_nav {
+  left: 38%;
+}
+
 header .nav-item:hover .border_nav{
   opacity: 1;
 }
@@ -97,20 +111,28 @@ header .nav-item:hover .border_nav{
   font-family: Raleway-Medium;
 }
 .btn-elegant {
-  padding: 10px 23px;
+  padding: 10px 38px;
+  background: #131313 !important;
 }
 .btn-danger {
-  padding: 10px 20px;
+  padding: 10px 34px;
+  background: #ff0036 !important;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon{
-  width: 36px !important;
-  height: 36px !important;
+.carousel-control-prev-icon ,.carousel-control-next-icon {
+  width: 40px !important;
+  height: 40px !important;
+}
+.carousel-control-prev-icon{
+  background: url("../img/header/left.png")  no-repeat center center !important;
+}
+.carousel-control-next-icon{
+  background: url("../img/header/right.png")  no-repeat center center !important;
 }
 .carousel-control-prev:hover .carousel-control-prev-icon{
-  background: url("../img/svg/arrow_left _hover.png");
+  background: url("../img/header/left_hover.png") no-repeat center center !important;
 }
 .carousel-control-next:hover .carousel-control-next-icon{
-  background: url("../img/svg/arrow_right_hover.png");
+  background: url("../img/header/right_hover.png") no-repeat center center !important;
 }
 #topBtn{
   position: fixed;
@@ -264,26 +286,31 @@ header .nav-item:hover .border_nav{
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
-.about .accordion h5:hover button {
-  color: red !important;
-  text-decoration: none !important;
+.accordion_info_head {
+  text-transform: none;
+  font-size: 20px;
+  font-family: Raleway-Medium;
 }
-.about .accordion h5 button[aria-expanded="true"] {
-  color: red !important;
-  text-decoration: none !important;
+.card-header a[aria-expanded="true"]{
+  color: #ff0036;
 }
-.about .accordion h5 button[aria-expanded="true"]::before{
-  content: '\f056';
-  font-family: "fontawesome";
-  padding-right: 5px;
+.card-header a[aria-expanded="true"] .plus_active{
+  display: none;
 }
-.about .accordion h5 button[aria-expanded="false"] {
-  text-decoration: none !important;
+.card-header a[aria-expanded="true"] .minus_hover{
+  display: inline !important;
 }
-.about .accordion h5 button[aria-expanded="false"]::before{
-  content: '\f055';
-  font-family: "fontawesome";
-  padding-right: 5px;
+.accordion_info_head_text {
+  padding: 15px 0 15px 30px;
+  border-left: 1px solid #dedede;
+}
+.accordion_info_head img {
+  width: 18px;
+  height: 18px;
+  margin: 0 20px;
+}
+.card-header:hover {
+  color: #ff0036;
 }
 
 h2 {
@@ -296,6 +323,9 @@ h3 {
   font-size: 16px;
   font-family: Lato-Bold;
   margin-top: 40px;
+}
+.about h3, #features_cr h3, #team_cr h3, .portfolio_tab_nav {
+  margin-bottom: 100px;
 }
 .about p {
   color: #505050;
@@ -315,14 +345,6 @@ h3 {
   color: #505050;
   font-size: 14px;
   font-family: Lato-Regular;
-}
-.about .card-header h5 .btn {
-  text-transform: none;
-  font-size: 20px;
-  font-family: Raleway-Medium;
-  margin: 0;
-  padding: 15px 0 15px 15px !important;
-  border-left: 1px solid #dedede;
 }
 .about .card .fa {
   float: left;
@@ -363,6 +385,9 @@ h3 {
 }
 .about_tehnology_img:hover .img_hover {
   display: inline;
+}
+.scroll_img {
+  margin-top: 100px;
 }
 
 /*--------------------- END ABOUT ---------------------*/
@@ -458,7 +483,7 @@ h3 {
 #clients_cr h3, #services_cr h3{
   color: #a4a4a4;
 }
-.clients_info, .scrol_client, .team_scroll, .skills_info, .prise_set, #last_twit h2, #contact_cr h2{
+.clients_info, .scrol_client, .team_scroll, .prise_set, #last_twit h2, #contact_cr h2{
   margin-top: 100px;
 }
 #clients_cr h4, .services_info h4, .prise_set h4{
@@ -477,8 +502,12 @@ h3 {
   margin-top: 35px;
 }
 #clients_cr ul li {
-  margin: 0 10px;
+  margin: 0 6px;
 }
+#clients_cr ul li .nav-link {
+  padding: 6px !important;
+}
+
 #clients_cr ul li a[aria-selected="true"] {
   background: red!important;
 }
@@ -541,10 +570,16 @@ h3 {
   text-transform: uppercase;
   color: #505050;
 }
+.team_wrapper h4 {
+  margin-top: 30px;
+}
 .team_wrapper h5, .skills_info h5, #last_twit h3{
   font-size: 16px;
   font-family: Lato-Regular;
   color: #505050;
+}
+.team_wrapper h5 {
+  margin: 20px 0 30px 0;
 }
 .our_skills, #plans_bestseller, .more_blog_arrow{
   margin-bottom: 100px;
@@ -572,14 +607,21 @@ h3 {
   background: #3d2329;
   color: #fff;
 }
-.services_active, .services_hover {
+.services_icon {
+  width: 66px;
+  height: 58px;
   margin-right: 30px;
+  margin-bottom: 0;
+  background-color: #a4a4a4;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+         clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 73% 100%, 27% 100%, 0% 50%);
+
 }
-.services_info:hover .services_active{
-  display: none;
+.services_info:hover .services_icon {
+  background-color: #ff0036;
 }
-.services_info:hover .services_hover {
-  display: inline !important;
+.services_icon i {
+  font-size: 25px;
 }
 .prise_set {
    border: 1px solid #f2f2f2;
@@ -790,7 +832,7 @@ footer {
 
 }
 
-@media (max-width : 1000px) {
+@media (max-width : 1100px) {
   .header_lg {
     display: none;
   }
@@ -828,8 +870,11 @@ footer {
   .features_info h4 {
     font-size: 14px;
   }
-  .clients_img, .scrol_client, .team_scroll, .team_wrapper, .skills_info,.contact_bg {
+  .clients_img, .scrol_client, .team_scroll, .team_wrapper,.contact_bg {
     margin-top: 40px;
+  }
+  .about_tehnology_img {
+    margin-top: 20px;
   }
   
 }
@@ -840,7 +885,8 @@ footer {
         flex-wrap: nowrap !important;
   }
   .team_info, .skills_info{
-    width: 50%;
+    width: 49%;
+    margin: auto;
   }
   .features_img {
     display: none;
@@ -892,17 +938,17 @@ footer {
     font-size: 17px !important;
     margin-top: 40px !important;
   }
-  h3, #clients_cr h4, .team_wrapper h4,.follow_social, .services_info h4, .about .card-header h5 .btn, .about .about_tehnology h5, .our_skills h4 {
+  h3, #clients_cr h4, .team_wrapper h4,.follow_social, .services_info h4, .about .about_tehnology h5, .our_skills h4 {
     font-size: 14px !important;
     margin-top: 15px !important;
   }
   .about .about_tehnology {
     margin: 50px 0;
   }
-  #portfolio_cr ul li a, #clients_cr h5,.contact_info form p,.contact_info input, .contact_info select, .contact_info textarea, .services_info h4, #last_twit h3,#blog_cr h4 {
+  #portfolio_cr ul li a, #clients_cr h5,.accordion_info_head, .contact_info form p,.contact_info input, .contact_info select, .contact_info textarea, .services_info h4, #last_twit h3,#blog_cr h4 {
     font-size: 14px !important;
   }
-  #portfolio_cr .scrol_portfolio,.contact_info, .clients_info, .clients_img, .prise_set {
+  #portfolio_cr .scrol_portfolio,.scroll_img, .contact_info, .clients_info, .clients_img, .prise_set {
     margin-top: 40px;
   }
   .about_tehnology .col-sm-6 ,.prise_wrapper {
@@ -919,8 +965,8 @@ footer {
   .team_wrapper, .skills_info,.contact_info form, .services_info, .more_blog_arrow {
     margin-top: 15px;
   }
-  .our_skills, #plans_bestseller, .more_blog_arrow{
-    margin-bottom: 40px;
+  .our_skills, #plans_bestseller, .more_blog_arrow, .portfolio_tab_nav{
+    margin-bottom: 40px ;
   }
   .team_info {
     padding: 0 5px !important;
@@ -940,6 +986,28 @@ footer {
   }
   .portfolio_gallery_hover {
     font-size: 10px;
+  }
+  .about h3, #features_cr h3, #team_cr h3 {
+    margin-bottom: 40px;
+  }
+  .team_wrapper h4 {
+    margin-top: 15px;
+  }
+  .team_wrapper h5 {
+    margin: 10px 0 15px 0;
+  }
+  .title_meta_blog {
+    margin: 10px 0;
+  }
+  .button_blog {
+    margin: 10px 0 ;
+  }
+  .services_icon {
+    width: 40px;
+    height: 33px;
+  }
+  .services_icon i {
+    font-size: 18px;
   }
   
 }
