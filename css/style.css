@@ -883,7 +883,7 @@ footer {
         flex-wrap: nowrap !important;
   }
   .team_info, .skills_info{
-    width: 49%;
+    width: 50%;
     margin: auto;
   }
   .features_img {
@@ -894,9 +894,10 @@ footer {
   }
   .prise_wrapper {
     width: 50%;
+    padding: 0 5px 0 10px;
   }
   #plans_bestseller .container {
-    width: 90%
+    width: 100%
   }
   .contact_info form {
     margin-top: 15px;
