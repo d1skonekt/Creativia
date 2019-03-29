@@ -434,6 +434,7 @@ h3 {
   font-family: Lato-Regular;
   color: #fff;
   background: rgba(5,13,17,.7);
+  cursor: default;
 }
 .portfolio_gallery_hover:hover {
   opacity: 1;
