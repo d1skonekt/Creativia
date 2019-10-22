@@ -1,15 +1,13 @@
-
-
 html {
   font-size: 10px;
-  height: 100%
+  height: 100%;
 }
 
 body {
- height: 100%;
+  height: 100%;
 }
 
-.wrapper{
+.wrapper {
   margin: auto;
   max-width: 1400px;
 }
@@ -19,22 +17,21 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   background-color: #fff;
 }
 footer {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
-
 
 /*---------------------  HEADER ---------------------*/
 .red-text {
@@ -77,7 +74,9 @@ header .nav-link {
   left: 40%;
   opacity: 0;
 }
-.header_lg ul li:nth-child(1) .border_nav,.header_lg ul li:nth-child(7) .border_nav,.header_lg ul li:nth-child(5) .border_nav {
+.header_lg ul li:nth-child(1) .border_nav,
+.header_lg ul li:nth-child(7) .border_nav,
+.header_lg ul li:nth-child(5) .border_nav {
   left: 31%;
 }
 .header_lg ul li:nth-child(4) .border_nav {
@@ -87,13 +86,13 @@ header .nav-link {
   left: 38%;
 }
 
-header .nav-item:hover .border_nav{
+header .nav-item:hover .border_nav {
   opacity: 1;
 }
 .carousel-caption {
   bottom: 40%;
 }
-.carousel-caption h3{
+.carousel-caption h3 {
   font-size: 30px;
   font-family: Raleway-Bold;
   color: #fff;
@@ -104,7 +103,7 @@ header .nav-item:hover .border_nav{
   color: #fff;
   margin-top: 30px;
 }
-.header_btn .btn{
+.header_btn .btn {
   font-size: 18px !important;
   font-family: Raleway-Medium;
 }
@@ -116,23 +115,24 @@ header .nav-item:hover .border_nav{
   padding: 10px 34px;
   background: #ff0036 !important;
 }
-.carousel-control-prev-icon ,.carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   width: 40px !important;
   height: 40px !important;
 }
-.carousel-control-prev-icon{
-  background: url("../img/header/left.png")  no-repeat center center !important;
+.carousel-control-prev-icon {
+  background: url("../img/header/left.png") no-repeat center center !important;
 }
-.carousel-control-next-icon{
-  background: url("../img/header/right.png")  no-repeat center center !important;
+.carousel-control-next-icon {
+  background: url("../img/header/right.png") no-repeat center center !important;
 }
-.carousel-control-prev:hover .carousel-control-prev-icon{
+.carousel-control-prev:hover .carousel-control-prev-icon {
   background: url("../img/header/left_hover.png") no-repeat center center !important;
 }
-.carousel-control-next:hover .carousel-control-next-icon{
+.carousel-control-next:hover .carousel-control-next-icon {
   background: url("../img/header/right_hover.png") no-repeat center center !important;
 }
-#topBtn{
+#topBtn {
   position: fixed;
   bottom: 40px;
   right: 20px;
@@ -145,13 +145,19 @@ header .nav-item:hover .border_nav{
   cursor: pointer;
   display: none;
   z-index: 99;
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 95% 50%, 70% 100%, 30% 100%, 5% 50%);
-          clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  opacity: .5;
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    95% 50%,
+    70% 100%,
+    30% 100%,
+    5% 50%
+  );
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 0.5;
 }
 
 /*--------------------- END HEADER ---------------------*/
-
 
 /*---------------------  HEADER_SM ---------------------*/
 
@@ -159,19 +165,19 @@ header .nav-item:hover .border_nav{
 .hidden-menu {
   display: block;
   position: fixed;
-  list-style:none;
+  list-style: none;
   padding: 10px;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 200px;
-  background-color: rgba(38,38,38,.9);
+  background-color: rgba(38, 38, 38, 0.9);
   height: 100%;
   top: 0;
   left: -200px;
-  -webkit-transition: left .2s;
-  -o-transition: left .2s;
-  transition: left .2s;
+  -webkit-transition: left 0.2s;
+  -o-transition: left 0.2s;
+  transition: left 0.2s;
   z-index: 2;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -189,9 +195,9 @@ header .nav-item:hover .border_nav{
   top: 5px;
   left: 5px;
   cursor: pointer;
-  -webkit-transition: left .23s;
-  -o-transition: left .23s;
-  transition: left .23s;
+  -webkit-transition: left 0.23s;
+  -o-transition: left 0.23s;
+  transition: left 0.23s;
   z-index: 3;
   width: 20px;
   -webkit-transform: translateZ(0);
@@ -203,9 +209,9 @@ header .nav-item:hover .border_nav{
   height: 2px;
   background-color: red;
   margin: 5px 0 0;
-  -webkit-transition: all .1s linear .23s;
-  -o-transition: all .1s linear .23s;
-  transition: all .1s linear .23s;
+  -webkit-transition: all 0.1s linear 0.23s;
+  -o-transition: all 0.1s linear 0.23s;
+  transition: all 0.1s linear 0.23s;
   position: relative;
 }
 /*прибиваем к верху лэйбла первую полоску*/
@@ -215,7 +221,7 @@ header .nav-item:hover .border_nav{
 /*при нажатии на бургер двигаем его и делаем другой фон бургеру*/
 .hidden-menu-ticker:checked ~ .btn-menu {
   left: 160px;
-  background-color: rgba(38,38,38,.1);
+  background-color: rgba(38, 38, 38, 0.1);
 }
 /*и дальше стили меняющие бургер, двигающие менюшку по событию - нажатие на значек бургера*/
 .hidden-menu-ticker:checked ~ .hidden-menu {
@@ -251,7 +257,7 @@ header .nav-item:hover .border_nav{
 .header_sm figure {
   position: relative;
 }
-.header_sm figcaption{
+.header_sm figcaption {
   position: absolute;
   top: 27%;
 }
@@ -265,7 +271,7 @@ header .nav-item:hover .border_nav{
 .hidden-menu li {
   margin-top: 5px;
 }
-.hidden-menu a{
+.hidden-menu a {
   font-size: 18px;
   font-family: Raleway-Regular;
   color: #fff;
@@ -278,24 +284,23 @@ header .nav-item:hover .border_nav{
 
 /*--------------------- END HEADER_SM ---------------------*/
 
-
 /*--------------------- ABOUT ---------------------*/
 .about .card {
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .accordion_info_head {
   text-transform: none;
   font-size: 20px;
   font-family: Raleway-Medium;
 }
-.card-header a[aria-expanded="true"]{
+.card-header a[aria-expanded="true"] {
   color: #ff0036;
 }
-.card-header a[aria-expanded="true"] .plus_active{
+.card-header a[aria-expanded="true"] .plus_active {
   display: none;
 }
-.card-header a[aria-expanded="true"] .minus_hover{
+.card-header a[aria-expanded="true"] .minus_hover {
   display: inline !important;
 }
 .accordion_info_head_text {
@@ -322,7 +327,10 @@ h3 {
   font-family: Lato-Bold;
   margin-top: 40px;
 }
-.about h3, #features_cr h3, #team_cr h3, .portfolio_tab_nav {
+.about h3,
+#features_cr h3,
+#team_cr h3,
+.portfolio_tab_nav {
   margin-bottom: 100px;
 }
 .about p {
@@ -348,17 +356,24 @@ h3 {
   float: left;
   padding: 24px;
 }
-#tab_about a{
+#tab_about a {
   font-size: 16px;
   font-family: Raleway-Regular;
   color: #505050;
 }
-#tab_about a[aria-selected="true"]{
+#tab_about a[aria-selected="true"] {
   color: red;
 }
 .clip-polygon {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 95% 50%, 70% 100%, 30% 100%, 5% 50%);
-          clip-path: polygon(30% 0%, 70% 0%, 95% 50%, 70% 100%, 30% 100%, 5% 50%);
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    95% 50%,
+    70% 100%,
+    30% 100%,
+    5% 50%
+  );
+  clip-path: polygon(30% 0%, 70% 0%, 95% 50%, 70% 100%, 30% 100%, 5% 50%);
 }
 .about .about_tehnology {
   margin: 100px 0;
@@ -375,10 +390,10 @@ h3 {
   font-family: Lato-Regular;
   color: #505050;
 }
-.about_tehnology_img .img_hover{
+.about_tehnology_img .img_hover {
   display: none;
 }
-.about_tehnology_img:hover .img_normal{
+.about_tehnology_img:hover .img_normal {
   display: none;
 }
 .about_tehnology_img:hover .img_hover {
@@ -390,31 +405,36 @@ h3 {
 
 /*--------------------- END ABOUT ---------------------*/
 
-
 /*--------------------- PORTFOLIO ---------------------*/
 #portfolio_cr {
   border-top: 1px solid #262626;
   background: #262626;
 }
-#portfolio_cr h2, #clients_cr h2, #services_cr h2,#blog_cr h2,#follow_cr h2 {
+#portfolio_cr h2,
+#clients_cr h2,
+#services_cr h2,
+#blog_cr h2,
+#follow_cr h2 {
   text-align: center;
   font-size: 30px;
   font-family: Raleway-Bold;
   color: #fff;
   margin-top: 90px;
 }
-#portfolio_cr .scrol_portfolio, .blog_info{
+#portfolio_cr .scrol_portfolio,
+.blog_info {
   margin-top: 90px;
 }
-#portfolio_cr ul li a{
+#portfolio_cr ul li a {
   font-size: 16px;
   font-family: Lato-Bold;
   color: #a4a4a4;
 }
-#portfolio_cr ul li a[aria-selected="true"]{
+#portfolio_cr ul li a[aria-selected="true"] {
   color: #ff0036;
 }
-.portfolio_gallery, .features_info {
+.portfolio_gallery,
+.features_info {
   max-width: 1400px;
   margin: auto;
 }
@@ -433,7 +453,7 @@ h3 {
   font-size: 16px;
   font-family: Lato-Regular;
   color: #fff;
-  background: rgba(5,13,17,.7);
+  background: rgba(5, 13, 17, 0.7);
   cursor: default;
 }
 .portfolio_gallery_hover:hover {
@@ -442,12 +462,13 @@ h3 {
 
 /*--------------------- END PORTFOLIO ---------------------*/
 
-
 /*--------------------- FEATURES ---------------------*/
 #features_cr {
   padding: 20px;
 }
-#features_cr h2, #team_cr h2,#plans_bestseller h2{
+#features_cr h2,
+#team_cr h2,
+#plans_bestseller h2 {
   margin-top: 90px;
 }
 #features_cr h4 {
@@ -462,10 +483,10 @@ h3 {
   color: #fff;
   background: #fd1717;
 }
-#features_cr h4:hover .features_img_active{
+#features_cr h4:hover .features_img_active {
   display: none;
 }
-#features_cr h4:hover .features_img_hover{
+#features_cr h4:hover .features_img_hover {
   display: inline !important;
 }
 .features_img {
@@ -473,31 +494,39 @@ h3 {
 }
 /*--------------------- END FEATURES ---------------------*/
 
-
 /*--------------------- CLIENTS ---------------------*/
 #clients_cr {
   background: #272727;
-  padding: .1px;
+  padding: 0.1px;
 }
-#clients_cr h3, #services_cr h3{
+#clients_cr h3,
+#services_cr h3 {
   color: #a4a4a4;
 }
-.clients_info, .scrol_client, .team_scroll, .prise_set, #last_twit h2, #contact_cr h2{
+.clients_info,
+.scrol_client,
+.team_scroll,
+.prise_set,
+#last_twit h2,
+#contact_cr h2 {
   margin-top: 100px;
 }
-#clients_cr h4, .services_info h4, .prise_set h4{
+#clients_cr h4,
+.services_info h4,
+.prise_set h4 {
   font-size: 20px;
   font-family: Raleway-Medium;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
-.clients_info p, .services_info p {
+.clients_info p,
+.services_info p {
   font-size: 16px;
   font-family: Lato-Regular;
   color: #a4a4a4;
 }
-.clients_info ul{
+.clients_info ul {
   margin-top: 35px;
 }
 #clients_cr ul li {
@@ -508,7 +537,7 @@ h3 {
 }
 
 #clients_cr ul li a[aria-selected="true"] {
-  background: red!important;
+  background: red !important;
 }
 #clients_cr ul li a[aria-selected="false"] {
   background: #fff;
@@ -520,11 +549,17 @@ h3 {
   text-transform: uppercase;
 }
 .client_hexagon {
- -webkit-clip-path: polygon(25% 30%, 75% 30%, 100% 60%, 75% 90%, 25% 90%, 0% 60%);
-         clip-path: polygon(25% 30%, 75% 30%, 100% 60%, 75% 90%, 25% 90%, 0% 60%);
+  -webkit-clip-path: polygon(
+    25% 30%,
+    75% 30%,
+    100% 60%,
+    75% 90%,
+    25% 90%,
+    0% 60%
+  );
+  clip-path: polygon(25% 30%, 75% 30%, 100% 60%, 75% 90%, 25% 90%, 0% 60%);
 }
 /*--------------------- END CLIENTS ---------------------*/
-
 
 /*--------------------- TEAM ---------------------*/
 .black_hover {
@@ -546,15 +581,15 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .black_hover span:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
-.team_wrapper:hover h4{
+.team_wrapper:hover h4 {
   color: red;
 }
 .team_wrapper:hover {
@@ -563,7 +598,8 @@ h3 {
 .team_wrapper {
   border: 1px solid #d2d2d2;
 }
-.team_wrapper h4, .skills_info h4{
+.team_wrapper h4,
+.skills_info h4 {
   font-size: 20px;
   font-family: Raleway-Medium;
   text-transform: uppercase;
@@ -572,7 +608,9 @@ h3 {
 .team_wrapper h4 {
   margin-top: 30px;
 }
-.team_wrapper h5, .skills_info h5, #last_twit h3{
+.team_wrapper h5,
+.skills_info h5,
+#last_twit h3 {
   font-size: 16px;
   font-family: Lato-Regular;
   color: #505050;
@@ -580,18 +618,21 @@ h3 {
 .team_wrapper h5 {
   margin: 20px 0 30px 0;
 }
-.our_skills, #plans_bestseller, .more_blog_arrow{
+.our_skills,
+#plans_bestseller,
+.more_blog_arrow {
   margin-bottom: 100px;
 }
 /*--------------------- END TEAM ---------------------*/
 
-
 /*--------------------- SERVICES ---------------------*/
 #services_cr {
-  padding: .1px;
+  padding: 0.1px;
   background: #272727;
 }
-.services_info, .more_blog_arrow,.follow_social {
+.services_info,
+.more_blog_arrow,
+.follow_social {
   margin-top: 50px;
 }
 .services_info h4 {
@@ -602,7 +643,7 @@ h3 {
   padding: 15px;
   background: #343434;
 }
-.services_info:hover  p{
+.services_info:hover p {
   background: #3d2329;
   color: #fff;
 }
@@ -612,9 +653,15 @@ h3 {
   margin-right: 30px;
   margin-bottom: 0;
   background-color: #a4a4a4;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-         clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 73% 100%, 27% 100%, 0% 50%);
-
+  -webkit-clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+  );
+  clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 73% 100%, 27% 100%, 0% 50%);
 }
 .services_info:hover .services_icon {
   background-color: #ff0036;
@@ -623,21 +670,22 @@ h3 {
   font-size: 25px;
 }
 .prise_set {
-   border: 1px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 .prise_set h4 {
   background: #262626;
   padding: 10px 0;
   margin-bottom: 0;
 }
-.prise_set h5, .prise_set h6 {
+.prise_set h5,
+.prise_set h6 {
   font-size: 16px;
   font-family: Lato-Regular;
   text-transform: uppercase;
   padding: 20px 0 13px 0;
   border-top: 1px solid #f2f2f2;
 }
-.prise_set h6+p{
+.prise_set h6 + p {
   border-top: 1px solid #f2f2f2;
 }
 .prise_set h6 {
@@ -661,7 +709,7 @@ h3 {
 .prise_set .order_now {
   padding: 20px 0 13px 0;
 }
-.prise_set .order_now a{
+.prise_set .order_now a {
   font-size: 18px;
   font-family: Raleway-Regular;
   text-transform: uppercase;
@@ -669,15 +717,14 @@ h3 {
   background: #262626;
   padding: 10px 50px;
 }
-.prise_set:hover a{
+.prise_set:hover a {
   background: #ff0000;
 }
 /*--------------------- END SERVICES ---------------------*/
 
-
 /*--------------------- BLOG  ---------------------*/
 #last_twit {
-  background: url("../img/twit/twit_bg.png") no-repeat 10% bottom  #262626;
+  background: url("../img/twit/twit_bg.png") no-repeat 10% bottom #262626;
   background-size: contain;
   padding: 0.1px;
 }
@@ -693,19 +740,19 @@ h3 {
   font-family: Raleway-SemiBold;
   color: #2e2e2e;
 }
-#blog_cr h5{
+#blog_cr h5 {
   font-size: 12px;
   font-family: Lato-Regular;
   color: #a2a2a2;
   margin-top: 15px;
 }
 #blog_cr i {
- margin-right: 5px;
+  margin-right: 5px;
 }
 #blog_cr .blog_icons {
   margin-right: 15px;
 }
-#blog_cr p{
+#blog_cr p {
   font-size: 14px;
   font-family: Lato-Regular;
   color: #505050;
@@ -714,7 +761,7 @@ h3 {
 #blog_cr .button_blog {
   padding: 8px 0;
 }
-#blog_cr .button_blog a{
+#blog_cr .button_blog a {
   font-size: 16px;
   font-family: Lato-Regular;
   text-transform: uppercase;
@@ -729,7 +776,7 @@ h3 {
   text-align: center;
   font-size: 20px;
 }
-.more_blog_arrow  a{
+.more_blog_arrow a {
   color: #4d4d4d;
   background-color: #d2d2d2;
   padding: 7px 10px;
@@ -743,14 +790,13 @@ h3 {
 .follow_social_icon {
   margin-right: 4%;
 }
-.follow_social_icon:hover .follow_active{
+.follow_social_icon:hover .follow_active {
   display: none;
 }
 .follow_social_icon:hover .follow_hover {
   display: inline !important;
 }
 /*--------------------- END BLOG ---------------------*/
-
 
 /*--------------------- CONTACT ---------------------*/
 .contact_info {
@@ -765,9 +811,11 @@ h3 {
 }
 .contact_info form .btn {
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
-.contact_info input, .contact_info select, .contact_info textarea {
+.contact_info input,
+.contact_info select,
+.contact_info textarea {
   min-height: 35px;
   font-size: 16px;
   color: #505050;
@@ -778,12 +826,12 @@ h3 {
 .contact_info form {
   background: #fff;
 }
-.contact_info form p{
+.contact_info form p {
   font-size: 20px;
   font-family: Raleway-Medium;
   color: #262626;
 }
-.contact_info form .btn{
+.contact_info form .btn {
   font-size: 16px;
   font-family: Lato-Bold;
 }
@@ -796,7 +844,7 @@ h3 {
   font-size: 16px;
   color: #fff;
 }
-.container_adres h5 a{
+.container_adres h5 a {
   color: #fff;
 }
 
@@ -805,33 +853,36 @@ h3 {
 footer {
   background: #262626;
   min-height: 75px;
+  padding-top: 20px;
 }
 
+.footer-links ul {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
 
+.footer-links a {
+  font-size: 20px;
+  color: #a1a1a1;
+}
 
-
-
-
-
-
-
-
-
-
+.footer-links a:hover {
+  color: aquamarine;
+}
 
 /*------------- MEDIA -----------------*/
-@media (max-width : 1200px) {
+@media (max-width: 1200px) {
   header .container_navbar {
     max-width: 1100px !important;
   }
   header .nav-item {
     font-size: 15px;
   }
-
-
 }
 
-@media (max-width : 1100px) {
+@media (max-width: 1100px) {
   .header_lg {
     display: none;
   }
@@ -843,7 +894,7 @@ footer {
   }
   .portfolio_gallery {
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .header_sm {
     width: 100%;
@@ -857,33 +908,38 @@ footer {
   .features_img {
     padding: 5px;
   }
-  .prise_set .order_now a{
+  .prise_set .order_now a {
     padding: 10px 15px;
   }
 }
 
-@media (max-width : 900px) {
+@media (max-width: 900px) {
   .features_img {
     padding: 0;
   }
   .features_info h4 {
     font-size: 14px;
   }
-  .clients_img, .scrol_client, .team_scroll, .team_wrapper,.contact_bg {
+  .clients_img,
+  .scrol_client,
+  .team_scroll,
+  .team_wrapper,
+  .contact_bg {
     margin-top: 40px;
   }
   .about_tehnology_img {
     margin-top: 20px;
   }
-  
 }
 
-@media (max-width : 600px){
-  .features_info, .clients_img {
+@media (max-width: 600px) {
+  .features_info,
+  .clients_img {
     -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
-  .team_info, .skills_info{
+  .team_info,
+  .skills_info {
     width: 50%;
     margin: auto;
   }
@@ -898,14 +954,14 @@ footer {
     padding: 0 5px 0 10px;
   }
   #plans_bestseller .container {
-    width: 100%
+    width: 100%;
   }
   .contact_info form {
     margin-top: 15px;
   }
 }
 
-@media (max-width : 480px) {
+@media (max-width: 480px) {
   .header_sm {
     width: 100%;
   }
@@ -914,7 +970,8 @@ footer {
     top: 12%;
     width: 90%;
   }
-  .header_sm_info .big_info, .features_img {
+  .header_sm_info .big_info,
+  .features_img {
     display: none;
   }
   .header_sm_info .small_info {
@@ -922,51 +979,95 @@ footer {
   }
   .header_sm_btn .btn {
     font-size: 8px;
-    padding: .5rem 1.5rem !important;
+    padding: 0.5rem 1.5rem !important;
   }
-  .header_sm figcaption p, .header_sm figcaption h1{
-    margin: 0!important;
+  .header_sm figcaption p,
+  .header_sm figcaption h1 {
+    margin: 0 !important;
   }
-  .about p, #features_cr h4,#blog_cr p,#blog_cr .button_blog a, .our_skills h5, .team_wrapper h5, .clients_info p, .about .about_tehnology p, .services_info p{
+  .about p,
+  #features_cr h4,
+  #blog_cr p,
+  #blog_cr .button_blog a,
+  .our_skills h5,
+  .team_wrapper h5,
+  .clients_info p,
+  .about .about_tehnology p,
+  .services_info p {
     font-size: 11px;
   }
-  .about .card-body,.prise_set h4,.prise_set h5, .prise_set h6, .prise_set .order_now a{
+  .about .card-body,
+  .prise_set h4,
+  .prise_set h5,
+  .prise_set h6,
+  .prise_set .order_now a {
     font-size: 11px;
     padding: 5px;
   }
-  h2, .header_sm h1 {
+  h2,
+  .header_sm h1 {
     font-size: 17px !important;
     margin-top: 40px !important;
   }
-  h3, #clients_cr h4, .team_wrapper h4,.follow_social, .services_info h4, .about .about_tehnology h5, .our_skills h4 {
+  h3,
+  #clients_cr h4,
+  .team_wrapper h4,
+  .follow_social,
+  .services_info h4,
+  .about .about_tehnology h5,
+  .our_skills h4 {
     font-size: 14px !important;
     margin-top: 15px !important;
   }
   .about .about_tehnology {
     margin: 50px 0;
   }
-  #portfolio_cr ul li a, #clients_cr h5,.accordion_info_head, .contact_info form p,.contact_info input, .contact_info select, .contact_info textarea, .services_info h4, #last_twit h3,#blog_cr h4 {
+  #portfolio_cr ul li a,
+  #clients_cr h5,
+  .accordion_info_head,
+  .contact_info form p,
+  .contact_info input,
+  .contact_info select,
+  .contact_info textarea,
+  .services_info h4,
+  #last_twit h3,
+  #blog_cr h4 {
     font-size: 14px !important;
   }
-  #portfolio_cr .scrol_portfolio,.scroll_img, .contact_info, .clients_info, .clients_img, .prise_set {
+  #portfolio_cr .scrol_portfolio,
+  .scroll_img,
+  .contact_info,
+  .clients_info,
+  .clients_img,
+  .prise_set {
     margin-top: 40px;
   }
-  .about_tehnology .col-sm-6 ,.prise_wrapper {
+  .about_tehnology .col-sm-6,
+  .prise_wrapper {
     width: 50%;
   }
-  .features_info, .portfolio_gallery, .clients_img {
+  .features_info,
+  .portfolio_gallery,
+  .clients_img {
     -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
   #features_cr h4 {
     margin-top: 5px;
     text-align: center;
   }
-  .team_wrapper, .skills_info,.contact_info form, .services_info, .more_blog_arrow {
+  .team_wrapper,
+  .skills_info,
+  .contact_info form,
+  .services_info,
+  .more_blog_arrow {
     margin-top: 15px;
   }
-  .our_skills, #plans_bestseller, .more_blog_arrow, .portfolio_tab_nav{
-    margin-bottom: 40px ;
+  .our_skills,
+  #plans_bestseller,
+  .more_blog_arrow,
+  .portfolio_tab_nav {
+    margin-bottom: 40px;
   }
   .team_info {
     padding: 0 5px !important;
@@ -974,7 +1075,9 @@ footer {
   .prise {
     font-size: 17px !important;
   }
-  .prise sub,.contact_info form .btn,.container_adres h5 {
+  .prise sub,
+  .contact_info form .btn,
+  .container_adres h5 {
     font-size: 11px !important;
   }
   .follow_social_icon img {
@@ -987,7 +1090,9 @@ footer {
   .portfolio_gallery_hover {
     font-size: 10px;
   }
-  .about h3, #features_cr h3, #team_cr h3 {
+  .about h3,
+  #features_cr h3,
+  #team_cr h3 {
     margin-bottom: 40px;
   }
   .team_wrapper h4 {
@@ -1000,7 +1105,7 @@ footer {
     margin: 10px 0;
   }
   .button_blog {
-    margin: 10px 0 ;
+    margin: 10px 0;
   }
   .services_icon {
     width: 40px;
@@ -1009,5 +1114,4 @@ footer {
   .services_icon i {
     font-size: 18px;
   }
-  
 }
