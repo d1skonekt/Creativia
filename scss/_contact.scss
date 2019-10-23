@@ -1,0 +1,58 @@
+.contact_info {
+  margin: auto;
+  width: 88%;
+}
+
+.contact_bg {
+  background: url("../img/contact/map.png") no-repeat center center;
+  padding: 20px 0;
+  margin-top: 100px;
+  background-size: cover;
+}
+
+.contact_info form .btn {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.contact_info input,
+.contact_info select,
+.contact_info textarea {
+  min-height: 35px;
+  font-size: 16px;
+  color: #505050;
+}
+
+.contact_info textarea {
+  min-height: 90px;
+}
+
+.contact_info form {
+  background: #fff;
+}
+
+.contact_info form p {
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  color: #262626;
+}
+
+.contact_info form .btn {
+  font-size: 16px;
+  font-family: Lato-Bold;
+}
+
+.container_adres {
+  padding: 20px;
+  background: #262626;
+  text-align: center;
+}
+
+.container_adres h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.container_adres h5 a {
+  color: #fff;
+}

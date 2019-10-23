@@ -1,0 +1,148 @@
+.red-text {
+  color: #ff0036 !important;
+}
+
+nav {
+  background-color: #07070b;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-nav {
+  min-height: 65px;
+}
+
+header .collapse {
+  position: relative;
+}
+
+header .navbar-brand {
+  position: absolute;
+  top: -23px;
+  left: 0;
+  z-index: 99;
+}
+
+header .nav-item {
+  font-size: 18px;
+  font-family: Raleway-Regular;
+  text-transform: uppercase;
+  margin: 0 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav-link {
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 5px;
+}
+
+
+.carousel-caption {
+  bottom: 40%;
+}
+
+.carousel-caption h3 {
+  font-size: 30px;
+  font-family: Raleway-Bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  font-family: Lato-Regular;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.header_btn .btn {
+  font-size: 18px !important;
+  font-family: Raleway-Medium;
+}
+
+.btn-elegant {
+  padding: 10px 38px;
+  background: #131313 !important;
+}
+
+.btn-danger {
+  padding: 10px 34px;
+  background: #ff0036 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.carousel-control-prev-icon {
+  background: url("../img/header/left.png") no-repeat center center !important;
+}
+
+.carousel-control-next-icon {
+  background: url("../img/header/right.png") no-repeat center center !important;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background: url("../img/header/left_hover.png") no-repeat center center !important;
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+  background: url("../img/header/right_hover.png") no-repeat center center !important;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+  -webkit-clip-path: polygon(30% 0%,
+      70% 0%,
+      95% 50%,
+      70% 100%,
+      30% 100%,
+      5% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 0.5;
+}
+
+.header_lg .container_navbar {
+  position: relative;
+}
+
+.header_lg .nav-item:hover::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 3px;
+  background-color: #ff0036;
+}
+
+.header_lg .nav-item:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 3px;
+  background-color: #ff0036;
+}

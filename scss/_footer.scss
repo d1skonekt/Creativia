@@ -1,0 +1,21 @@
+footer {
+  background: #262626;
+  min-height: 75px;
+  padding-top: 20px;
+}
+
+.footer-links ul {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-links a {
+  font-size: 20px;
+  color: #a1a1a1;
+}
+
+.footer-links a:hover {
+  color: aquamarine;
+}

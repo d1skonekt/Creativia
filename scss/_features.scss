@@ -1,0 +1,35 @@
+#features_cr {
+  padding: 20px;
+}
+
+#features_cr h2,
+#team_cr h2,
+#plans_bestseller h2 {
+  margin-top: 90px;
+}
+
+#features_cr h4 {
+  font-size: 16px;
+  font-family: Raleway-Medium;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 15px 0;
+  border: 1px solid #e7e7e7;
+}
+
+#features_cr h4:hover {
+  color: #fff;
+  background: #fd1717;
+}
+
+#features_cr h4:hover .features_img_active {
+  display: none;
+}
+
+#features_cr h4:hover .features_img_hover {
+  display: inline !important;
+}
+
+.features_img {
+  padding: 0 20px;
+}

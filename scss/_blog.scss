@@ -1,0 +1,89 @@
+#last_twit {
+  background: url("../img/twit/twit_bg.png") no-repeat 10% bottom #262626;
+  background-size: contain;
+  padding: 0.1px;
+}
+
+#last_twit h3 {
+  color: #fff;
+  margin-top: 15px;
+}
+
+#blog_cr h2 {
+  color: #262626;
+}
+
+#blog_cr h4 {
+  font-size: 20px;
+  font-family: Raleway-SemiBold;
+  color: #2e2e2e;
+}
+
+#blog_cr h5 {
+  font-size: 12px;
+  font-family: Lato-Regular;
+  color: #a2a2a2;
+  margin-top: 15px;
+}
+
+#blog_cr i {
+  margin-right: 5px;
+}
+
+#blog_cr .blog_icons {
+  margin-right: 15px;
+}
+
+#blog_cr p {
+  font-size: 14px;
+  font-family: Lato-Regular;
+  color: #505050;
+  margin-bottom: 0;
+}
+
+#blog_cr .button_blog {
+  padding: 8px 0;
+}
+
+#blog_cr .button_blog a {
+  font-size: 16px;
+  font-family: Lato-Regular;
+  text-transform: uppercase;
+  color: #fff;
+  background: #262626;
+  padding: 10px 15px;
+}
+
+#blog_cr .button_blog a:hover {
+  background: red;
+}
+
+.more_blog_arrow {
+  text-align: center;
+  font-size: 20px;
+}
+
+.more_blog_arrow a {
+  color: #4d4d4d;
+  background-color: #d2d2d2;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+
+#follow_cr {
+  padding: 0.1px;
+  background: url(../img/header/header_slider_0.png) no-repeat center top;
+  background-size: cover;
+}
+
+.follow_social_icon {
+  margin-right: 4%;
+}
+
+.follow_social_icon:hover .follow_active {
+  display: none;
+}
+
+.follow_social_icon:hover .follow_hover {
+  display: inline !important;
+}

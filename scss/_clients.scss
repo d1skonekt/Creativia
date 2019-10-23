@@ -1,0 +1,72 @@
+#clients_cr {
+  background: #272727;
+  padding: 0.1px;
+}
+
+#clients_cr h3,
+#services_cr h3 {
+  color: #a4a4a4;
+}
+
+.clients_info,
+.scrol_client,
+.team_scroll,
+.prise_set,
+#last_twit h2,
+#contact_cr h2 {
+  margin-top: 100px;
+}
+
+#clients_cr h4,
+.services_info h4,
+.prise_set h4 {
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clients_info p,
+.services_info p {
+  font-size: 16px;
+  font-family: Lato-Regular;
+  color: #a4a4a4;
+}
+
+.clients_info ul {
+  margin-top: 35px;
+}
+
+#clients_cr ul li {
+  margin: 0 6px;
+}
+
+#clients_cr ul li .nav-link {
+  padding: 6px !important;
+}
+
+#clients_cr ul li a[aria-selected="true"] {
+  background: red !important;
+}
+
+#clients_cr ul li a[aria-selected="false"] {
+  background: #fff;
+}
+
+#clients_cr h5 {
+  font-size: 16px;
+  font-family: Raleway-Bold;
+  color: red;
+  text-transform: uppercase;
+}
+
+.client_hexagon {
+  -webkit-clip-path: polygon(25% 30%,
+      75% 30%,
+      100% 60%,
+      75% 90%,
+      25% 90%,
+      0% 60%);
+  clip-path: polygon(25% 30%, 75% 30%, 100% 60%, 75% 90%, 25% 90%, 0% 60%);
+}

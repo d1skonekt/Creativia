@@ -1,0 +1,138 @@
+.about .card {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.accordion_info_head {
+  text-transform: none;
+  font-size: 20px;
+  font-family: Raleway-Medium;
+}
+
+.card-header a[aria-expanded="true"] {
+  color: #ff0036;
+}
+
+.card-header a[aria-expanded="true"] .plus_active {
+  display: none;
+}
+
+.card-header a[aria-expanded="true"] .minus_hover {
+  display: inline !important;
+}
+
+.accordion_info_head_text {
+  padding: 15px 0 15px 30px;
+  border-left: 1px solid #dedede;
+}
+
+.accordion_info_head img {
+  width: 18px;
+  height: 18px;
+  margin: 0 20px;
+}
+
+.card-header:hover {
+  color: #ff0036;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Raleway-Bold;
+}
+
+h3 {
+  text-align: center;
+  font-size: 16px;
+  font-family: Lato-Bold;
+  margin-top: 40px;
+}
+
+.about h3,
+#features_cr h3,
+#team_cr h3,
+.portfolio_tab_nav {
+  margin-bottom: 100px;
+}
+
+.about p {
+  color: #505050;
+  font-size: 16px;
+  font-family: Lato-Regular;
+}
+
+.about .card-header {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #dedede;
+  margin-bottom: 0.1px !important;
+  padding: 0;
+}
+
+.about .card-body {
+  border: 1px solid #dedede;
+  border-top: none;
+  margin-top: 0;
+  color: #505050;
+  font-size: 14px;
+  font-family: Lato-Regular;
+}
+
+.about .card .fa {
+  float: left;
+  padding: 24px;
+}
+
+#tab_about a {
+  font-size: 16px;
+  font-family: Raleway-Regular;
+  color: #505050;
+}
+
+#tab_about a[aria-selected="true"] {
+  color: red;
+}
+
+.clip-polygon {
+  -webkit-clip-path: polygon(30% 0%,
+      70% 0%,
+      95% 50%,
+      70% 100%,
+      30% 100%,
+      5% 50%);
+  clip-path: polygon(30% 0%, 70% 0%, 95% 50%, 70% 100%, 30% 100%, 5% 50%);
+}
+
+.about .about_tehnology {
+  margin: 100px 0;
+}
+
+.about .about_tehnology h5 {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: Raleway-Medium;
+  color: #262626;
+}
+
+.about .about_tehnology p {
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: Lato-Regular;
+  color: #505050;
+}
+
+.about_tehnology_img .img_hover {
+  display: none;
+}
+
+.about_tehnology_img:hover .img_normal {
+  display: none;
+}
+
+.about_tehnology_img:hover .img_hover {
+  display: inline;
+}
+
+.scroll_img {
+  margin-top: 100px;
+}

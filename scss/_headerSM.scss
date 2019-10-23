@@ -1,0 +1,135 @@
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: rgba(38, 38, 38, 0.9);
+  height: 100%;
+  top: 0;
+  left: -200px;
+  -webkit-transition: left 0.2s;
+  -o-transition: left 0.2s;
+  transition: left 0.2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+/*скрываем инпут чекбокс*/
+.hidden-menu-ticker {
+  display: none;
+}
+
+/*общие стили значка-гамбургера, самого лэйбла*/
+.btn-menu {
+  color: #fff;
+  padding: 2px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  -webkit-transition: left 0.23s;
+  -o-transition: left 0.23s;
+  transition: left 0.23s;
+  z-index: 3;
+  width: 20px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+/*общие стили полосок*/
+.btn-menu span {
+  display: block;
+  height: 2px;
+  background-color: red;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.1s linear 0.23s;
+  -o-transition: all 0.1s linear 0.23s;
+  transition: all 0.1s linear 0.23s;
+  position: relative;
+}
+
+/*прибиваем к верху лэйбла первую полоску*/
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+/*при нажатии на бургер двигаем его и делаем другой фон бургеру*/
+.hidden-menu-ticker:checked~.btn-menu {
+  left: 160px;
+  background-color: rgba(38, 38, 38, 0.1);
+}
+
+/*и дальше стили меняющие бургер, двигающие менюшку по событию - нажатие на значек бургера*/
+.hidden-menu-ticker:checked~.hidden-menu {
+  left: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 7px;
+  background-color: #fff;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -7px;
+  background-color: #fff;
+}
+
+.header_sm {
+  color: #fff;
+  text-align: center;
+}
+
+.header_sm h1 {
+  font-size: 30px;
+  font-family: Raleway-Bold;
+}
+
+.header_sm p {
+  font-size: 11px;
+  font-family: Lato-Regular;
+}
+
+.header_sm figure {
+  position: relative;
+}
+
+.header_sm figcaption {
+  position: absolute;
+  top: 27%;
+}
+
+.header_sm_btn .btn {
+  font-size: 10px;
+  font-family: Raleway-Medium;
+}
+
+.hidden-menu {
+  text-align: left;
+}
+
+.hidden-menu li {
+  margin-top: 5px;
+}
+
+.hidden-menu a {
+  font-size: 18px;
+  font-family: Raleway-Regular;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hidden-menu a:hover {
+  color: #a1a1a1;
+  border-bottom: 1px solid #ff0036;
+}

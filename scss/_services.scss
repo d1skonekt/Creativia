@@ -1,0 +1,110 @@
+#services_cr {
+  padding: 0.1px;
+  background: #272727;
+}
+
+.services_info,
+.more_blog_arrow,
+.follow_social {
+  margin-top: 50px;
+}
+
+.services_info h4 {
+  text-align: left;
+}
+
+.services_info p {
+  margin-top: 20px;
+  padding: 15px;
+  background: #343434;
+}
+
+.services_info:hover p {
+  background: #3d2329;
+  color: #fff;
+}
+
+.services_icon {
+  width: 66px;
+  height: 58px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  background-color: #a4a4a4;
+  -webkit-clip-path: polygon(25% 0%,
+      75% 0%,
+      100% 50%,
+      75% 100%,
+      25% 100%,
+      0% 50%);
+  clip-path: polygon(27% 0%, 73% 0%, 100% 50%, 73% 100%, 27% 100%, 0% 50%);
+}
+
+.services_info:hover .services_icon {
+  background-color: #ff0036;
+}
+
+.services_icon i {
+  font-size: 25px;
+}
+
+.prise_set {
+  border: 1px solid #f2f2f2;
+}
+
+.prise_set h4 {
+  background: #262626;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.prise_set h5,
+.prise_set h6 {
+  font-size: 16px;
+  font-family: Lato-Regular;
+  text-transform: uppercase;
+  padding: 20px 0 13px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.prise_set h6+p {
+  border-top: 1px solid #f2f2f2;
+}
+
+.prise_set h6 {
+  text-transform: none;
+}
+
+.prise_set .prise {
+  font-size: 50px;
+  font-family: Lato-Black;
+  color: #262626;
+  background: #f2f2f2;
+  margin-bottom: 0;
+}
+
+.prise_set sub {
+  font-size: 16px;
+  font-family: Lato-Regular;
+}
+
+.prise_set:hover .prise {
+  color: #fff;
+  background: #ff0000;
+}
+
+.prise_set .order_now {
+  padding: 20px 0 13px 0;
+}
+
+.prise_set .order_now a {
+  font-size: 18px;
+  font-family: Raleway-Regular;
+  text-transform: uppercase;
+  color: #fff;
+  background: #262626;
+  padding: 10px 50px;
+}
+
+.prise_set:hover a {
+  background: #ff0000;
+}

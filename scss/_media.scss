@@ -1,0 +1,290 @@
+@media (max-width: 1200px) {
+  header .container_navbar {
+    max-width: 1100px !important;
+  }
+
+  header .nav-item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header_lg {
+    display: none;
+  }
+
+  .header_sm {
+    display: block !important;
+  }
+
+  .slider_about {
+    margin-top: 15px;
+  }
+
+  .portfolio_gallery {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .header_sm {
+    width: 100%;
+  }
+
+  .header_sm figcaption {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    width: 95%;
+  }
+
+  .features_img {
+    padding: 5px;
+  }
+
+  .prise_set .order_now a {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .features_img {
+    padding: 0;
+  }
+
+  .features_info h4 {
+    font-size: 14px;
+  }
+
+  .clients_img,
+  .scrol_client,
+  .team_scroll,
+  .team_wrapper,
+  .contact_bg {
+    margin-top: 40px;
+  }
+
+  .about_tehnology_img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .features_info,
+  .clients_img {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .team_info,
+  .skills_info {
+    width: 50%;
+    margin: auto;
+  }
+
+  .features_img {
+    display: none;
+  }
+
+  .features_info h4 {
+    text-align: center;
+  }
+
+  .prise_wrapper {
+    width: 50%;
+    padding: 0 5px 0 10px;
+  }
+
+  #plans_bestseller .container {
+    width: 100%;
+  }
+
+  .contact_info form {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_sm {
+    width: 100%;
+  }
+
+  .header_sm figcaption {
+    position: absolute;
+    top: 12%;
+    width: 90%;
+  }
+
+  .header_sm_info .big_info,
+  .features_img {
+    display: none;
+  }
+
+  .header_sm_info .small_info {
+    display: inline !important;
+  }
+
+  .header_sm_btn .btn {
+    font-size: 8px;
+    padding: 0.5rem 1.5rem !important;
+  }
+
+  .header_sm figcaption p,
+  .header_sm figcaption h1 {
+    margin: 0 !important;
+  }
+
+  .about p,
+  #features_cr h4,
+  #blog_cr p,
+  #blog_cr .button_blog a,
+  .our_skills h5,
+  .team_wrapper h5,
+  .clients_info p,
+  .about .about_tehnology p,
+  .services_info p {
+    font-size: 11px;
+  }
+
+  .about .card-body,
+  .prise_set h4,
+  .prise_set h5,
+  .prise_set h6,
+  .prise_set .order_now a {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  h2,
+  .header_sm h1 {
+    font-size: 17px !important;
+    margin-top: 40px !important;
+  }
+
+  h3,
+  #clients_cr h4,
+  .team_wrapper h4,
+  .follow_social,
+  .services_info h4,
+  .about .about_tehnology h5,
+  .our_skills h4 {
+    font-size: 14px !important;
+    margin-top: 15px !important;
+  }
+
+  .about .about_tehnology {
+    margin: 50px 0;
+  }
+
+  #portfolio_cr ul li a,
+  #clients_cr h5,
+  .accordion_info_head,
+  .contact_info form p,
+  .contact_info input,
+  .contact_info select,
+  .contact_info textarea,
+  .services_info h4,
+  #last_twit h3,
+  #blog_cr h4 {
+    font-size: 14px !important;
+  }
+
+  #portfolio_cr .scrol_portfolio,
+  .scroll_img,
+  .contact_info,
+  .clients_info,
+  .clients_img,
+  .prise_set {
+    margin-top: 40px;
+  }
+
+  .about_tehnology .col-sm-6,
+  .prise_wrapper {
+    width: 50%;
+  }
+
+  .features_info,
+  .portfolio_gallery,
+  .clients_img {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+
+  #features_cr h4 {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .team_wrapper,
+  .skills_info,
+  .contact_info form,
+  .services_info,
+  .more_blog_arrow {
+    margin-top: 15px;
+  }
+
+  .our_skills,
+  #plans_bestseller,
+  .more_blog_arrow,
+  .portfolio_tab_nav {
+    margin-bottom: 40px;
+  }
+
+  .team_info {
+    padding: 0 5px !important;
+  }
+
+  .prise {
+    font-size: 17px !important;
+  }
+
+  .prise sub,
+  .contact_info form .btn,
+  .container_adres h5 {
+    font-size: 11px !important;
+  }
+
+  .follow_social_icon img {
+    width: 38px;
+    height: 34px;
+  }
+
+  .blog_info {
+    margin-top: 15px;
+  }
+
+  .portfolio_gallery_hover {
+    font-size: 10px;
+  }
+
+  .about h3,
+  #features_cr h3,
+  #team_cr h3 {
+    margin-bottom: 40px;
+  }
+
+  .team_wrapper h4 {
+    margin-top: 15px;
+  }
+
+  .team_wrapper h5 {
+    margin: 10px 0 15px 0;
+  }
+
+  .title_meta_blog {
+    margin: 10px 0;
+  }
+
+  .button_blog {
+    margin: 10px 0;
+  }
+
+  .services_icon {
+    width: 40px;
+    height: 33px;
+  }
+
+  .services_icon i {
+    font-size: 18px;
+  }
+}
